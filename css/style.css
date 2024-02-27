@@ -11,7 +11,7 @@ font-family: 'Poppins', sans-serif; */
 /* VARIABLES */
 
 html {
-    --color-background: rgb(225 252 213);
+    --color-background: rgb(247 192 197);
     --pink-text: rgb(235 135 171);
     --idlecafe-bg: rgb(42 44 44);
 }
@@ -26,7 +26,7 @@ html {
 body {
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
-    background-color: var(--color-background);
+    background-color: rgb(247 192 197);
     min-height: 100vh;
     font-size: 85.75%;
 }
@@ -56,14 +56,14 @@ p {
 }
 
 header {
-    padding: 1rem;
+    padding: 1em;
     display: flex;
     justify-content: space-between;
 }
 
 header a {
     text-decoration: none;
-    color: var(--pink-text);
+    color: rgb(77 125 97);
 }
 
 section {
@@ -72,25 +72,16 @@ section {
     justify-content: center;
 }
 
-.overview h2 {
-    font-size: 3.2em;
-}
-
-.overview p {
-    font-size: 1.3em;
-}
-
 
 /* SUB PAGES HERO */
 
 hr {
     margin-top: 3em;
     margin-bottom: 3em;
-    border: 1.5px rgb(225 252 213) solid;
-    border-radius: 1em;
+    border-radius: 2em;
 }
 
-.subpage-hero {
+/* .subpage-hero {
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -103,7 +94,7 @@ hr {
 
 .subpage-hero .textbox {
     padding: 3em 2em;
-}
+} */
 
 
 /* LOGO */
@@ -111,7 +102,7 @@ hr {
 .site-logo {
     font-family: 'Fraunces', serif;
     font-weight: 500;
-    padding: 1rem;
+    padding: 1em;
 }
 
 
@@ -185,30 +176,29 @@ video {
 /* FOOTER */
 
 .site-footer {
-    background-color: rgb(235 135 171);
+    background-color: rgb(61 85 85);
     padding: 3rem;
+    color: rgb(225 252 213);
+}
+
+.site-footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .site-footer a {
     color: rgb(225 252 213);
     text-decoration: none;
-}
-
-.nav-text {
     text-transform: uppercase;
-    font-weight: 500;
-}
-
-.nav-text a:hover {
-    color: rgb(36 39 42);
-    cursor: grab;
+    padding: 1em;
 }
 
 
 /* TOGGLE NAV */
 
 #menu {
-    background: rgb(255 226 237);
+    background: rgb(224 255 154);
     height: 100%;
     left: 0;
     opacity: 0;
@@ -285,10 +275,10 @@ video {
     font-family: "Fraunces", serif;
     font-weight: 600;
     font-style: italic;
-    color: var(--pink-text);
+    color: rgb(77 125 97);
     display: block;
-    font-size: 2.5rem;
-    padding: 1rem 1rem;
+    font-size: 4em;
+    padding: .4em .4em;
     text-decoration: none;
     text-transform: lowercase;
 }
@@ -314,7 +304,7 @@ video {
 }
 
 .toggle-menu span {
-    background-color: rgb(235 135 171);
+    background-color: rgb(77 125 97);
     content: "";
     display: block;
     height: 3px;
@@ -329,7 +319,7 @@ video {
 
 .toggle-menu span:before,
 .toggle-menu span:after {
-    background-color: rgb(235 135 171);
+    background-color: rgb(77 125 97);
     content: "";
     display: block;
     height: 3px;
@@ -398,10 +388,10 @@ video {
 
 figure {
     margin: 0;
-    padding: .6em;
-    color: rgb(235 135 171);
-    background: rgb(255 226 237);
-    width: 10em;
+    padding: 1em;
+    color: rgb(0 0 0);
+    background: rgb(255 255 255);
+    width: 18em;
     box-shadow: 0 0 4vmin rgba(0 0 0 / .35);
     font-size: 1em;
     position: absolute;
