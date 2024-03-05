@@ -123,6 +123,17 @@ section {
     text-decoration: line-through;
 }
 
+.micro ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.micro li {
+    text-align: center;
+    background-color: red;
+}
+
 .download-pg {
     margin-top: 1.5em;
     text-align: center;
@@ -150,16 +161,21 @@ section {
     line-height: 1;
 }
 
-.pushed-frame img {
-    margin-top: 2.9em;
-}
-
 .text-right {
     text-align: right;
 }
 
 .text-centered {
     text-align: center;
+}
+
+.micro-captions {
+    /* align-content: flex-start; */
+    align-items: start;
+    /* display: inline-block; */
+    /* justify-content: flex-start; */
+    padding-top: .5em;
+    border: 1px solid red;
 }
 
 
@@ -227,9 +243,6 @@ video {
     width: 98%;
     margin: 1%;
     flex-shrink: 0;
-    /* padding: .5em; */
-
-    background-color: #eee;
 
     @media (min-width: 768px) {
         &.centered {
@@ -258,6 +271,39 @@ video {
         &.one-fifth {
             width: 18%;
         }
+
+
+    }
+}
+
+@media (min-width: 768px) {
+    .wireframes-bg {
+        position: relative;
+    }
+
+    .wireframes-bg::after {
+        content: '';
+        position: absolute;
+        top: 1em;
+        left: 2em;
+        right: 2em;
+        bottom: -1em;
+        background-color: rgb(55 54 68);
+        z-index: -1;
+    }
+}
+
+.wireframes-bg .row>.column {
+    margin: 0;
+
+    @media (min-width: 768px) {
+        &.one-fifth {
+            width: 19%;
+        }
+
+        &.pushed-frame img {
+            translate: 0 10%;
+        }
     }
 }
 
@@ -267,6 +313,10 @@ video {
 .container {
     max-width: 800px;
     margin: 0 auto;
+}
+
+.container.narrow {
+    max-width: 500px;
 }
 
 
@@ -522,10 +572,6 @@ figure a {
     color: rgb(255 123 0);
 }
 
-/* .wireframes-bg {
-    background-color: rgb(55 54 68);
-    background-size: 100px;
-} */
 
 .haikyuu-button {
     background-color: rgb(255 123 0);
@@ -543,5 +589,3 @@ figure a {
     background-color: rgb(55 54 68);
     color: rgb(255 123 0);
 }
-
-
