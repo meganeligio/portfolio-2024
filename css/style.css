@@ -123,17 +123,6 @@ section {
     text-decoration: line-through;
 }
 
-.micro ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-.micro li {
-    text-align: center;
-    background-color: red;
-}
-
 .download-pg {
     margin-top: 1.5em;
     text-align: center;
@@ -170,11 +159,7 @@ section {
 }
 
 .micro-captions {
-    /* align-content: flex-start; */
-    align-items: start;
-    /* display: inline-block; */
-    /* justify-content: flex-start; */
-    padding-top: .5em;
+    align-items: flex-start;
     border: 1px solid red;
 }
 
