@@ -53,15 +53,6 @@ h3 {
     font-weight: 600;
 }
 
-h4 {
-    text-transform: lowercase;
-    font-weight: 500;
-    font-style: italic;
-    margin-top: 0;
-    margin-bottom: 1;
-    color: rgb(255 123 0);
-}
-
 p {
     margin-top: .2em;
 }
@@ -85,6 +76,15 @@ section {
 
 /* STRICTLY FOR SUBPAGES */
 
+.orange-subtext {
+    text-transform: lowercase;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 1;
+    color: rgb(255 123 0);
+}
+
 .solution {
     text-align: center;
     margin-top: 3em;
@@ -92,7 +92,7 @@ section {
 
 .sub-titles {
     font-weight: 500;
-    margin-top: 2.2em;
+    margin-top: 2.5em;
 }
 
 .sitemap-flowchart {
@@ -107,6 +107,28 @@ section {
 
 .fidelity {
     line-height: 1;
+}
+
+.download-pg {
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+.button {
+    background-color: rgb(255 123 0);
+    font-weight: 600;
+    color: rgb(255 255 255);
+    border: none;
+    text-transform: uppercase;
+    padding: .7em 3em;
+    border-radius: 2em;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: rgb(55 54 68);
+    color: rgb(255 123 0);
 }
 
 .customs-app {
@@ -125,18 +147,6 @@ section {
 .text-centered {
     text-align: center;
 }
-
-/* .micro h3 {
-    text-transform: lowercase;
-    text-align: center;
-    margin-bottom: .2em;
-}
-
-.micro p {
-    text-transform: lowercase;
-    text-align: center;
-    margin-top: 0;
-} */
 
 
 /* SUB PAGES HERO */
@@ -172,6 +182,10 @@ img {
     box-shadow: 0 2px 8px 1.5px rgb(0 0 0 / .2);
 }
 
+.border-icon {
+    border-radius: 15px;
+}
+
 
 /* VIDEO */
 
@@ -199,9 +213,9 @@ video {
     width: 98%;
     margin: 1%;
     flex-shrink: 0;
-    padding: 1em;
+    /* padding: .5em; */
 
-    /* background-color: #eee; */
+    background-color: #eee;
 
     @media (min-width: 768px) {
         &.centered {
@@ -226,6 +240,10 @@ video {
         &.one-fourth {
             width: 23%;
         }
+
+        &.one-fifth {
+            width: 18%;
+        }
     }
 }
 
@@ -233,7 +251,7 @@ video {
 /* CONTAINER */
 
 .container {
-    max-width: 760px;
+    max-width: 800px;
     margin: 0;
 }
 
