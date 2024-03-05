@@ -107,6 +107,20 @@ section {
 
 .fidelity {
     line-height: 1;
+    margin-bottom: .2em;
+}
+
+.linked-prototype {
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: 600;
+    font-style: italic;
+    color: rgb(0 0 0);
+}
+
+.linked-prototype:hover {
+    color: rgb(255 123 0);
+    text-decoration: line-through;
 }
 
 .download-pg {
@@ -136,8 +150,8 @@ section {
     line-height: 1;
 }
 
-.haikyuu-orange {
-    color: rgb(255 123 0);
+.pushed-frame img {
+    margin-top: 2.9em;
 }
 
 .text-right {
@@ -252,7 +266,7 @@ video {
 
 .container {
     max-width: 800px;
-    margin: 0;
+    margin: 0 auto;
 }
 
 
@@ -503,3 +517,31 @@ figure a {
 .haikyuu-bg {
     background-color: rgb(255 255 255);
 }
+
+.haikyuu-orange {
+    color: rgb(255 123 0);
+}
+
+/* .wireframes-bg {
+    background-color: rgb(55 54 68);
+    background-size: 100px;
+} */
+
+.haikyuu-button {
+    background-color: rgb(255 123 0);
+    font-weight: 600;
+    color: rgb(255 255 255);
+    border: none;
+    text-transform: uppercase;
+    padding: .7em 3em;
+    border-radius: 2em;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+.haikyuu-button:hover {
+    background-color: rgb(55 54 68);
+    color: rgb(255 123 0);
+}
+
+
