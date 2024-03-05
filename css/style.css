@@ -33,22 +33,33 @@ body {
 
 h1 {
     font-family: 'Fraunces', serif;
-    font-weight: 500;
-    font-size: 5em;
-    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 10em;
+    font-style: italic;
+    text-transform: lowercase;
     margin-bottom: 0;
-    margin-top: 0;
+    margin-top: 1.5em;
 }
 
 h2 {
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 0;
+    font-size: 2.5em;
 }
 
 h3 {
     text-transform: uppercase;
     font-weight: 600;
+}
+
+h4 {
+    text-transform: lowercase;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 1;
+    color: rgb(255 123 0);
 }
 
 p {
@@ -72,6 +83,44 @@ section {
     justify-content: center;
 }
 
+/* STRICTLY FOR SUBPAGES */
+
+.solution {
+    text-align: center;
+    margin-top: 3em;
+}
+
+.sub-titles {
+    font-weight: 500;
+    margin-top: 2.2em;
+}
+
+.sitemap-flowchart {
+    margin-top: 0;
+    font-weight: 500;
+}
+.style-tile-app {
+    text-align: right;
+}
+
+.style-name {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+}
+
+.fidelity {
+    line-height: 1;
+}
+
+.customs-app {
+    text-align: right;
+    line-height: 1;
+}
+
+.haikyuu-orange {
+    color: rgb(255 123 0);
+}
+
 
 /* SUB PAGES HERO */
 
@@ -80,21 +129,6 @@ hr {
     margin-bottom: 3em;
     border-radius: 2em;
 }
-
-/* .subpage-hero {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    min-height: 87vh;
-}
-
-.subpage-hero>div {
-    width: 50%;
-}
-
-.subpage-hero .textbox {
-    padding: 3em 2em;
-} */
 
 
 /* LOGO */
@@ -111,6 +145,14 @@ hr {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.border-img {
+    border-radius: 20px;
+}
+
+.shadows-img {
+    box-shadow: 0 2px 8px 1.5px rgb(0 0 0 / .2);
 }
 
 
@@ -131,12 +173,18 @@ video {
     align-items: center;
 }
 
+.row.swapped {
+    flex-direction: row-reverse;
+  }
+
 .row>.column {
     flex-grow: 1;
     width: 98%;
     margin: 1%;
     flex-shrink: 0;
-    padding: 1em;
+    /* padding: 1em; */
+
+    background-color: #eee;
 
     @media (min-width: 768px) {
         &.centered {
@@ -168,7 +216,7 @@ video {
 /* CONTAINER */
 
 .container {
-    max-width: 1000px;
+    max-width: 760px;
     margin: 0;
 }
 
@@ -414,141 +462,13 @@ figure a {
 
 /* IDLE CAFE */
 
-/* .idle-bg {
-    background-color: var(--idlecafe-bg);
-    color: rgb(234 245 222);
+
+/* HAIKYUU */
+
+.haikyuu-bg {
+    background-color: rgb(255 255 255);
 }
 
-.project-idle {
-    text-transform: uppercase;
-    margin-bottom: 0;
-    color: rgb(255 144 21);
+.context-reverse {
+    text-align: right;
 }
-
-.subhead-idle {
-    font-family: 'Poppins', sans-serif;
-    font-style: italic;
-    font-size: 1.4em;
-    font-weight: 400;
-    text-transform: lowercase;
-    margin-top: .5em;
-}
-
-.type-idle {
-    text-transform: none;
-    font-family: 'Fraunces', serif;
-    font-style: italic;
-    color: rgb(239 134 206);
-    font-size: 2em;
-}
-
-.tags-idle {
-    list-style: none;
-    padding: 0;
-}
-
-.tags-idle li {
-    display: inline-block;
-    background: rgb(225 255 0);
-    border-radius: .6em;
-    padding: .5em 2em;
-    margin: .3em .3em .5em 0;
-    color: rgb(41, 43, 45);
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-.white-bg {
-    min-height: 70vh;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(234 245 222);
-}
-
-.white-bg>div {
-    color: rgb(41, 43, 45);
-}
-
-.ideation-idle {
-    font-family: 'Fraunces', serif;
-    font-style: italic;
-    font-size: 6em;
-    text-transform: lowercase;
-}
-
-.sitemap-idle {
-    text-transform: uppercase;
-    margin-top: 0;
-}
-
-.style-idle {
-    text-transform: uppercase;
-    margin-top: 3em;
-    margin-bottom: 0;
-}
-
-.cotton-cndy {
-    font-family: 'Fraunces', serif;
-    font-style: normal;
-    color: rgb(225 255 0);
-}
-
-.logo-design {
-    text-transform: uppercase;
-    margin-top: 3em;
-    margin-bottom: 0;
-}
-
-.wireframes-idle {
-    font-family: 'Fraunces', serif;
-    font-style: italic;
-    font-size: 6em;
-    margin-bottom: 0;
-    text-transform: lowercase;
-}
-
-.linked-idle {
-    color: rgb(234 245 222);
-    font-style: italic;
-    margin-top: .5em;
-}
-
-.linked-idle:hover {
-    color: rgb(255 144 21);
-}
-
-.v-idle {
-    text-transform: uppercase;
-    margin-top: 3em;
-}
-
-.illustrations-idle {
-    font-family: 'Fraunces', serif;
-    font-style: italic;
-    font-size: 6em;
-    margin-bottom: 0;
-    text-transform: lowercase;
-}
-
-.versions-idle {
-    text-transform: uppercase;
-}
-
-.center-versions {
-    text-align: center;
-    margin: 0;
-}
-
-.final-idle {
-    text-transform: uppercase;
-    margin-top: 3em;
-    margin-bottom: 0;
-}
-
-.branding-idle {
-    font-family: 'Fraunces', serif;
-    font-style: italic;
-    font-size: 6em;
-    margin-bottom: .4em;
-    text-transform: lowercase;
-} */
