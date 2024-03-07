@@ -110,7 +110,7 @@ section {
     margin-bottom: .2em;
 }
 
-.linked-prototype {
+.haikyuu-prototype {
     text-decoration: none;
     font-size: 1.8em;
     font-weight: 600;
@@ -118,7 +118,7 @@ section {
     color: rgb(0 0 0);
 }
 
-.linked-prototype:hover {
+.haikyuu-prototype:hover {
     color: rgb(255 123 0);
     text-decoration: line-through;
 }
@@ -262,11 +262,11 @@ video {
 }
 
 @media (min-width: 768px) {
-    .wireframes-bg {
+    .haikyuu-wireframes {
         position: relative;
     }
 
-    .wireframes-bg::after {
+    .haikyuu-wireframes::after {
         content: '';
         position: absolute;
         top: 1em;
@@ -278,7 +278,7 @@ video {
     }
 }
 
-.wireframes-bg .row>.column {
+.haikyuu-wireframes .row>.column {
     margin: 0;
 
     @media (min-width: 768px) {
@@ -292,6 +292,10 @@ video {
     }
 }
 
+.haikyuu-animations .row {
+    align-items: normal;
+}
+
 
 /* CONTAINER */
 
@@ -301,7 +305,7 @@ video {
 }
 
 .container.narrow {
-    max-width: 500px;
+    max-width: 610px;
 }
 
 
