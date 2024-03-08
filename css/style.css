@@ -20,8 +20,8 @@ font-family: 'Poppins', sans-serif; */
     --body-font-color: rgb(77 125 97);
     --box-color: rgb(255 237 239);
     --header-image: url('https://dl.dropbox.com/s/q8yecsdxvctnz1g/sakura.gif');
-    --left-pixel: url('/img/heart.png');
-    --right-pixel: url('/img/bookmark.png');
+    --left-pixel: url('../img/heart.png');
+    --right-pixel: url('../img/bookmark.png');
 }
 
 
@@ -49,7 +49,7 @@ body {
     font-size: 85.75%;
     scrollbar-color: var(--title-color);
     /* Mozilla scrollbar fallback */
-    cursor: url('/fav-icon/ghoopy-side/favicon-32x32.png'), auto;
+    cursor: url('../fav-icon/ghoopy-side/favicon-32x32.png'), auto;
 }
 
 .about-body {
@@ -84,7 +84,7 @@ p {
 
 a:hover {
     color: var(--title-color);
-    cursor: url('/fav-icon/ghoopy-front/favicon-32x32.png'), auto;
+    cursor: url('../fav-icon/ghoopy-front/favicon.ico'), auto;
 }
 
 strong {
@@ -810,7 +810,7 @@ code {
     color: inherit;
     outline: inherit;
     border: none;
-    cursor: url('/fav-icon/ghoopy-front/favicon-32x32.png'), auto;
+    cursor: url('../fav-icon/ghoopy-front/favicon-32x32.png'), auto;
     height: inherit;
     width: inherit;
 }
@@ -832,7 +832,7 @@ code {
 .close:focus {
     color: var(--title-color);
     text-decoration: none;
-    cursor: url('/fav-icon/ghoopy-front/favicon-32x32.png'), auto;
+    cursor: url('../fav-icon/ghoopy-front/favicon-32x32.png'), auto;
 }
 
 /* MOBILE */
