@@ -16,7 +16,7 @@
     --box-color: rgb(255 237 239);
     --header-image: url('https://dl.dropbox.com/s/q8yecsdxvctnz1g/sakura.gif');
     --left-pixel: url('/img/heart.png');
-    --right-pixel: url('/img/crunchyroll.png');
+    --right-pixel: url('/img/bookmark.png');
 }
 
 body,
@@ -35,14 +35,19 @@ html {
 body {
     height: 100vh;
     background-color: rgb(250 254 239);
-    font: 0.9em var(--body-font);
+    font-family: var(--body-font);
     color: var(--body-font-color);
     scrollbar-color: var(--title-color);
     /* Mozilla scrollbar fallback */
     cursor: url('/fav-icon/ghoopy-side/favicon-32x32.png'), auto;
+    font-size: 85.75%;
 }
 
-.uppercase {
+h4 {
+    text-transform: uppercase;
+}
+
+strong {
     text-transform: uppercase;
 }
 
@@ -251,7 +256,7 @@ a {
 
 a:hover {
     color: var(--title-color);
-    cursor: url('/fav-icon/ghoopy-side/favicon-32x32.png'), auto;
+    cursor: url('/fav-icon/ghoopy-front/favicon-32x32.png'), auto;
 }
 
 h1 {
@@ -293,6 +298,7 @@ code {
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--title-color);
+    border-radius: 5px;
 }
 
 .about-container {
@@ -412,7 +418,7 @@ code {
     color: inherit;
     outline: inherit;
     border: none;
-    cursor: url('/fav-icon/ghoopy-side/favicon-32x32.png'), auto;
+    cursor: url('/fav-icon/ghoopy-front/favicon-32x32.png'), auto;
     height: inherit;
     width: inherit;
 }
@@ -434,7 +440,7 @@ code {
 .close:focus {
     color: var(--title-color);
     text-decoration: none;
-    cursor: url('/fav-icon/ghoopy-side/favicon-32x32.png'), auto;
+    cursor: url('/fav-icon/ghoopy-front/favicon-32x32.png'), auto;
 }
 
 
