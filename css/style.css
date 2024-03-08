@@ -10,24 +10,50 @@ font-family: 'Poppins', sans-serif; */
 
 /* VARIABLES */
 
-html {
-    margin: 0;
-    padding: 0;
+:root {
+    --background-color: rgb(250 254 239);
+    --title-color: rgb(247 192 197);
+    --title-border: rgb(77 125 97);
+    --title-font-size: 6em;
+    --title-font: 'Fraunces', serif;
+    --body-font: 'Poppins', sans-serif;
+    --body-font-color: rgb(77 125 97);
+    --box-color: rgb(255 237 239);
+    --header-image: url('https://dl.dropbox.com/s/q8yecsdxvctnz1g/sakura.gif');
+    --left-pixel: url('/img/heart.png');
+    --right-pixel: url('/img/bookmark.png');
 }
+
+
 
 
 /* GLOBALS */
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    padding: 0;
 }
 
 body {
     margin: 0 auto;
-    font-family: 'Poppins', sans-serif;
-    background-color: rgb(247 192 197);
+    font-family: var(--body-font);
+    background-color: var(--background-color);
     min-height: 100vh;
     font-size: 85.75%;
+    scrollbar-color: var(--title-color);
+    /* Mozilla scrollbar fallback */
+    cursor: url('/fav-icon/ghoopy-side/favicon-32x32.png'), auto;
+}
+
+.about-body {
+    color: var(--body-font-color);
 }
 
 h1 {
@@ -54,6 +80,15 @@ h3 {
 
 p {
     margin-top: .2em;
+}
+
+a:hover {
+    color: var(--title-color);
+    cursor: url('/fav-icon/ghoopy-front/favicon-32x32.png'), auto;
+}
+
+strong {
+    text-transform: uppercase;
 }
 
 header {
@@ -576,4 +611,278 @@ figure a {
 .haikyuu-button:hover {
     background-color: rgb(55 54 68);
     color: rgb(255 123 0);
+}
+
+
+/* ABOUT PAGE */
+
+.about-body>iframe:first-child {
+    display: none !important;
+}
+
+.about-h1 {
+    font-family: var(--title-font);
+    font-style: italic;
+    margin: 0;
+    margin-left: 0;
+    padding: .5em 0;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+::selection {
+    background: var(--title-color);
+}
+
+code {
+    background-color: var(--title-color);
+    color: var(--title-border);
+    padding: 0 5px;
+    border: 1px solid var(--title-border);
+    border-radius: 5px;
+}
+
+#title {
+    font-family: var(--title-font);
+    color: var(--title-color);
+    font-size: var(--title-font-size);
+    text-align: center;
+    font-style: italic;
+    font-weight: 600;
+}
+
+#caption-box {
+    height: 45vh;
+    max-width: 100%;
+    margin: 1em;
+    background: var(--header-image) center / contain no-repeat;
+}
+
+.about-container {
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1em;
+}
+
+.about-container>div {
+    flex: 0 1 auto;
+}
+
+#middle {
+    width: 33vw;
+}
+
+#box {
+    background-color: var(--box-color);
+    border: 2px dashed var(--title-border);
+    overflow-y: scroll;
+    max-height: 10em;
+    width: 30vw;
+    padding: 0em 1em;
+    margin: auto;
+
+    &::-webkit-scrollbar {
+        width: 0.5em;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--title-color);
+        border-radius: 5px;
+    }
+}
+
+#box p {
+    margin-top: 1em;
+}
+
+#right-pixel,
+#left-pixel {
+    width: 4em;
+    height: 4em;
+}
+
+#right-pixel {
+    float: left;
+    background: var(--right-pixel) center / contain no-repeat;
+}
+
+#left-pixel {
+    float: right;
+    background: var(--left-pixel) center / contain no-repeat;
+}
+
+#left-modal {
+    ::-webkit-scrollbar {
+        width: 0.5em;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--title-color);
+        border-radius: 5px;
+    }
+}
+
+#right-modal {
+    ::-webkit-scrollbar {
+        width: 0.5em;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--title-color);
+        border-radius: 5px;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding: 10em 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    position: relative;
+    background-color: var(--box-color);
+    margin: auto;
+    overflow: auto;
+    padding: 0;
+    border: 2px solid var(--title-border);
+    width: 36vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -30vh;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -30vh;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.modal-header {
+    padding: 0 1.5em;
+    border-bottom: 1px solid var(--title-border);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.modal-body {
+    overflow-y: scroll;
+    padding: 0.5em 1em;
+    max-height: 45vh;
+}
+
+.modal-button {
+    padding: 1em;
+    background: none;
+    color: inherit;
+    outline: inherit;
+    border: none;
+    cursor: url('/fav-icon/ghoopy-front/favicon-32x32.png'), auto;
+    height: inherit;
+    width: inherit;
+}
+
+.modal-img {
+    max-height: 30vh;
+    max-width: 100%;
+    padding: 5px;
+    float: right;
+}
+
+.close {
+    color: var(--title-border);
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--title-color);
+    text-decoration: none;
+    cursor: url('/fav-icon/ghoopy-front/favicon-32x32.png'), auto;
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 800px) {
+    .about-container {
+        max-width: 100%;
+        padding: 1em;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    .about-container>div {
+        max-width: 90vw;
+    }
+
+    #caption-box {
+        max-height: 30vh;
+        max-width: 100%;
+    }
+
+    .modal-content {
+        width: 90vw;
+    }
+
+    .modal-img {
+        height: 100%;
+        max-width: 35vw;
+    }
+
+    #box {
+        width: 85vw;
+    }
+
+    #middle {
+        order: 1;
+        width: 90vw;
+    }
+
+    #left {
+        order: 2;
+    }
+
+    #right {
+        order: 3;
+    }
+
+    #right-pixel,
+    #left-pixel {
+        width: 3.5em;
+        height: 3.5em;
+    }
 }
