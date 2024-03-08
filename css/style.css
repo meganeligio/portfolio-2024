@@ -84,7 +84,7 @@ p {
 
 a:hover {
     color: var(--title-color);
-    cursor: url('../fav-icon/ghoopy-front/favicon.ico'), auto;
+    cursor: url('../fav-icon/ghoopy-front/favicon-32x32.png'), auto;
 }
 
 strong {
