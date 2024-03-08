@@ -4,18 +4,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
+/* GLOBALS */
+
 :root {
-    --title-color: #ffc1d8;
-    --title-border: #ff4b78;
+    --title-color: rgb(247 192 197);
+    --title-border: rgb(77 125 97);
     --title-font-size: 6em;
     --title-font: 'Fraunces', serif;
     --body-font: 'Poppins', sans-serif;
-    --body-font-color: #671d5c;
-    --box-color: #fff4f4e8;
+    --body-font-color: rgb(77 125 97);
+    --box-color: rgb(255 237 239);
     --header-image: url('https://dl.dropbox.com/s/q8yecsdxvctnz1g/sakura.gif');
-    /* --bg-image: url('https://dl.dropbox.com/s/m9k6hfosjlww8na/bg.jpg'); */
-    --left-pixel: url('https://dl.dropbox.com/s/kgqiw9lk5yb8eos/abt.gif');
-    --right-pixel: url('https://dl.dropbox.com/s/yoqvxhwhek1btdq/bm.gif');
+    --left-pixel: url('/img/heart.png');
+    --right-pixel: url('/img/crunchyroll.png');
 }
 
 body,
@@ -33,12 +34,47 @@ html {
 
 body {
     height: 100vh;
-    background: var(--bg-image) center / cover no-repeat;
+    background-color: rgb(250 254 239);
     font: 0.9em var(--body-font);
     color: var(--body-font-color);
-    scrollbar-color: var(--box-border-color) var(--title-color);
+    scrollbar-color: var(--title-color);
     /* Mozilla scrollbar fallback */
+    cursor: url('/ghoopy-side/favicon-32x32.png'), auto;
 }
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* LOGO */
+
+.site-logo {
+    font-family: Helvetica, sans-serif;
+    font-weight: 500;
+    padding: 1em;
+}
+
+/* MY HEADER */
+
+.my-header {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-header a {
+    text-decoration: none;
+    color: rgb(77 125 97);
+}
+
+
+/* RESPONSIVE IMG */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 /* TOGGLE NAV */
 
@@ -203,7 +239,8 @@ body {
 }
 
 
-/* For Tumblr users - you can remove if that isn't you */
+/* SAKURA THEME PAGE CODE */
+
 body>iframe:first-child {
     display: none !important;
 }
@@ -214,6 +251,7 @@ a {
 
 a:hover {
     color: var(--title-color);
+    cursor: url('/ghoopy-side/favicon-32x32.png'), auto;
 }
 
 h1,
@@ -223,22 +261,10 @@ h4,
 h5,
 h6 {
     font-family: var(--title-font);
-    color: var(--title-border);
-}
-
-.my-header {
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-}
-
-.my-header a {
-    text-decoration: none;
-    color: rgb(77 125 97);
+    font-style: italic;
 }
 
 ::selection {
-    color: var(--title-border);
     background: var(--title-color);
 }
 
@@ -257,7 +283,6 @@ code {
     text-align: center;
     font-style: italic;
     font-weight: 600;
-    /* letter-spacing: 5px; */
 }
 
 #header {
@@ -323,8 +348,6 @@ code {
 #right-pixel>p,
 #left-pixel>p {
     text-align: center;
-    font-style: italic;
-    background-color: var(--box-color);
 }
 
 .modal {
@@ -382,6 +405,10 @@ code {
 .modal-header {
     padding: 0 1.5em;
     border-bottom: 1px solid var(--title-border);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
 .modal-body {
@@ -396,7 +423,7 @@ code {
     color: inherit;
     outline: inherit;
     border: none;
-    cursor: pointer;
+    cursor: url('/ghoopy-side/favicon-32x32.png'), auto;
     height: inherit;
     width: inherit;
 }
@@ -410,7 +437,6 @@ code {
 
 .close {
     color: var(--title-border);
-    float: right;
     font-size: 2.5em;
     font-weight: bold;
 }
@@ -419,10 +445,12 @@ code {
 .close:focus {
     color: var(--title-color);
     text-decoration: none;
-    cursor: pointer;
+    cursor: url('/ghoopy-side/favicon-32x32.png'), auto;
 }
 
+
 /* MOBILE */
+
 @media only screen and (max-width: 800px) {
     .container {
         max-width: 100%;
@@ -471,15 +499,4 @@ code {
         width: 3.5em;
         height: 3.5em;
     }
-}
-
-.site-logo {
-    font-family: Helvetica, sans-serif;
-    font-weight: 500;
-    padding: 1em;
-}
-
-section {
-    background-color: pink;
-    height: 100%;
 }

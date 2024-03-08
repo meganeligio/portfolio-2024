@@ -11,8 +11,8 @@ font-family: 'Poppins', sans-serif; */
 /* VARIABLES */
 
 html {
-    --title-color: #ffc1d8;
-    --box-color: #fff4f4e8;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -327,17 +327,6 @@ video {
     text-decoration: none;
     text-transform: uppercase;
     padding: 1em;
-}
-
-/* SCROLL BAR */
-
-::-webkit-scrollbar {
-    width: 0.5em;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: rgb(224 255 154);
-    outline: 1px solid rgb(255 123 0);
 }
 
 
