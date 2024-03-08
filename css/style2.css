@@ -39,7 +39,7 @@ body {
     color: var(--body-font-color);
     scrollbar-color: var(--title-color);
     /* Mozilla scrollbar fallback */
-    cursor: url('/ghoopy-side/favicon-32x32.png'), auto;
+    cursor: url('/fav-icon/ghoopy-side/favicon-32x32.png'), auto;
 }
 
 .uppercase {
@@ -188,7 +188,7 @@ img {
     background-color: rgb(77 125 97);
     content: "";
     display: block;
-    height: 3px;
+    height: 4px;
     left: calc(50% - 13px);
     position: absolute;
     top: calc(50% - 1px);
@@ -203,7 +203,7 @@ img {
     background-color: rgb(77 125 97);
     content: "";
     display: block;
-    height: 3px;
+    height: 4px;
     position: absolute;
     transition: background-color 0.2s ease-in-out, top 0.2s 0.2s ease-out, transform 0.2s linear;
     width: 26px;
@@ -251,15 +251,10 @@ a {
 
 a:hover {
     color: var(--title-color);
-    cursor: url('/ghoopy-side/favicon-32x32.png'), auto;
+    cursor: url('/fav-icon/ghoopy-side/favicon-32x32.png'), auto;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
     font-family: var(--title-font);
     font-style: italic;
 }
@@ -285,7 +280,7 @@ code {
     font-weight: 600;
 }
 
-#header {
+#caption-box {
     height: 45vh;
     max-width: 100%;
     margin: 1em;
@@ -298,10 +293,9 @@ code {
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--title-color);
-    outline: 1px solid var(--title-border);
 }
 
-.container {
+.about-container {
     max-height: 100vh;
     display: flex;
     justify-content: center;
@@ -311,7 +305,7 @@ code {
     gap: 1em;
 }
 
-.container>div {
+.about-container>div {
     flex: 0 1 auto;
 }
 
@@ -343,11 +337,6 @@ code {
 #left-pixel {
     float: right;
     background: var(--left-pixel) center / contain no-repeat;
-}
-
-#right-pixel>p,
-#left-pixel>p {
-    text-align: center;
 }
 
 .modal {
@@ -423,7 +412,7 @@ code {
     color: inherit;
     outline: inherit;
     border: none;
-    cursor: url('/ghoopy-side/favicon-32x32.png'), auto;
+    cursor: url('/fav-icon/ghoopy-side/favicon-32x32.png'), auto;
     height: inherit;
     width: inherit;
 }
@@ -445,25 +434,25 @@ code {
 .close:focus {
     color: var(--title-color);
     text-decoration: none;
-    cursor: url('/ghoopy-side/favicon-32x32.png'), auto;
+    cursor: url('/fav-icon/ghoopy-side/favicon-32x32.png'), auto;
 }
 
 
 /* MOBILE */
 
 @media only screen and (max-width: 800px) {
-    .container {
+    .about-container {
         max-width: 100%;
         padding: 1em;
         margin: 0 auto;
         flex-wrap: wrap;
     }
 
-    .container>div {
+    .about-container>div {
         max-width: 90vw;
     }
 
-    #header {
+    #caption-box {
         max-height: 30vh;
         max-width: 100%;
     }

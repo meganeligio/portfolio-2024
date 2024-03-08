@@ -175,7 +175,7 @@ hr {
 /* LOGO */
 
 .site-logo {
-    font-family: 'Fraunces', serif;
+    font-family: Helvetica, sans-serif;
     font-weight: 500;
     padding: 1em;
 }
@@ -442,7 +442,7 @@ video {
     background-color: rgb(77 125 97);
     content: "";
     display: block;
-    height: 3px;
+    height: 4px;
     left: calc(50% - 13px);
     position: absolute;
     top: calc(50% - 1px);
@@ -457,7 +457,7 @@ video {
     background-color: rgb(77 125 97);
     content: "";
     display: block;
-    height: 3px;
+    height: 4px;
     position: absolute;
     transition: background-color 0.2s ease-in-out, top 0.2s 0.2s ease-out, transform 0.2s linear;
     width: 26px;
