@@ -25,8 +25,6 @@ font-family: 'Poppins', sans-serif; */
 }
 
 
-
-
 /* GLOBALS */
 
 *,
@@ -614,7 +612,7 @@ figure a {
 }
 
 
-/* ABOUT PAGE */
+/* ABOUT */
 
 .about-body>iframe:first-child {
     display: none !important;
@@ -624,7 +622,6 @@ figure a {
     font-family: var(--title-font);
     font-style: italic;
     margin: 0;
-    margin-left: 0;
     padding: .5em 0;
     font-size: 2em;
     font-weight: 700;
@@ -719,7 +716,7 @@ code {
     ::-webkit-scrollbar {
         width: 0.5em;
     }
-    
+
     ::-webkit-scrollbar-thumb {
         background-color: var(--title-color);
         border-radius: 5px;
@@ -730,7 +727,7 @@ code {
     ::-webkit-scrollbar {
         width: 0.5em;
     }
-    
+
     ::-webkit-scrollbar-thumb {
         background-color: var(--title-color);
         border-radius: 5px;
@@ -884,5 +881,103 @@ code {
     #left-pixel {
         width: 3.5em;
         height: 3.5em;
+    }
+}
+
+
+/* GALLERY */
+
+.wrapper {
+    width: 60%;
+    margin: 40px auto;
+}
+
+.gallery-img {
+    max-width: none;
+    height: none;
+}
+
+div.gallery {
+    margin-top: 30px;
+}
+
+div.gallery ul {
+    list-style-type: none;
+    margin-left: 56px;
+    padding: 0;
+}
+
+.gallery-h1 {
+    font-family: var(--title-font);
+    color: var(--title-border);
+    font-size: var(--title-font-size);
+    text-align: center;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+/* animation */
+div.gallery ul li,
+div.gallery li img {
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+div.gallery ul li {
+    position: relative;
+    float: left;
+    width: 130px;
+    height: 130px;
+    margin: 5px;
+    padding: 5px;
+    z-index: 0;
+}
+
+/* Make sure z-index is higher on hover */
+/* Ensure that hover image overlapped the others */
+div.gallery ul li:hover {
+    z-index: 5;
+}
+
+/* Image is position nicely under li */
+div.gallery ul li img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / .2);
+    padding: 5px;
+    width: 130px;
+    height: 130px;
+    background: rgb(255 255 255);
+}
+
+div.gallery ul li img:hover {
+    width: 200px;
+    height: 200px;
+    margin-top: -130px;
+    margin-left: -130px;
+    top: 65%;
+    left: 65%;
+}
+
+/* Responsive hack */
+@media only screen and (min-width: 499px) and (max-width: 1212px) {
+    .wrapper {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 498px) {
+    .wrapper {
+        width: 300px;
+    }
+
+    div.gallery ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
     }
 }
