@@ -679,7 +679,7 @@ code {
     overflow-y: scroll;
     max-height: 10em;
     width: 30vw;
-    padding: 0em 1em;
+    padding: 0 1em;
     margin: auto;
 
     &::-webkit-scrollbar {
@@ -903,18 +903,11 @@ div.gallery {
 
 div.gallery ul {
     list-style-type: none;
-    margin-left: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-left: 55px; */
     padding: 0;
-}
-
-.gallery-h1 {
-    font-family: var(--title-font);
-    color: var(--title-border);
-    font-size: var(--title-font-size);
-    text-align: center;
-    font-style: italic;
-    font-weight: 600;
-    margin-top: 0;
+    justify-content: center;
 }
 
 /* animation */
