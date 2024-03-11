@@ -276,6 +276,21 @@ video {
         background-color: rgb(55 54 68);
         z-index: -1;
     }
+
+    .AB-wireframes {
+        position: relative;
+    }
+
+    .AB-wireframes::after {
+        content: '';
+        position: absolute;
+        top: 1em;
+        left: 2em;
+        right: 2em;
+        bottom: -1em;
+        background-color: rgb(63 126 198);
+        z-index: -1;
+    }
 }
 
 .haikyuu-wireframes .row>.column {
