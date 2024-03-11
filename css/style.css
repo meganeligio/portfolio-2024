@@ -44,7 +44,7 @@ body {
     font-family: var(--body-font);
     background-color: var(--background-color);
     min-height: 100vh;
-    font-size: 85.75%;
+    font-size: 84%;
     scrollbar-color: var(--title-color);
     /* Mozilla scrollbar fallback */
     cursor: url('../fav-icon/ghoopy-side/favicon-32x32.png'), auto;
@@ -57,18 +57,18 @@ body {
 h1 {
     font-family: 'Fraunces', serif;
     font-weight: 600;
-    font-size: 10em;
     font-style: italic;
+    font-size: 4.5em;
     text-transform: lowercase;
     margin-bottom: 0;
-    margin-top: 1.5em;
+    margin-top: 2.5em;
 }
 
 h2 {
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 0;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 h3 {
@@ -106,16 +106,31 @@ section {
     justify-content: center;
 }
 
-/* STRICTLY FOR SUBPAGES */
+/* MOBILE */
 
-.orange-subtext {
-    text-transform: lowercase;
-    font-weight: 500;
-    font-style: italic;
-    margin-top: 0;
-    margin-bottom: 1;
-    color: rgb(255 123 0);
+@media (min-width: 768px) {
+    body {
+        font-size: 85.75%;
+    }
+
+    h1 {
+        font-family: 'Fraunces', serif;
+        font-weight: 600;
+        font-size: 8em;
+        font-style: italic;
+        text-transform: lowercase;
+        margin-bottom: 0;
+        margin-top: 1.5em;
+    }
+
+    section {
+        padding: 1em;
+        display: grid;
+        justify-content: center;
+    }
 }
+
+/* STRICTLY FOR SUBPAGES */
 
 .solution {
     text-align: center;
@@ -144,9 +159,8 @@ section {
 
 .haikyuu-prototype {
     text-decoration: none;
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: 600;
-    font-style: italic;
     color: rgb(0 0 0);
 }
 
@@ -193,15 +207,6 @@ section {
 .micro-captions {
     align-items: flex-start;
     border: 1px solid red;
-}
-
-
-/* SUB PAGES HERO */
-
-hr {
-    margin-top: 3em;
-    margin-bottom: 3em;
-    border-radius: 2em;
 }
 
 
@@ -332,7 +337,7 @@ video {
 /* CONTAINER */
 
 .container {
-    max-width: 800px;
+    max-width: 610px;
     margin: 0 auto;
 }
 
@@ -526,8 +531,6 @@ video {
 }
 
 
-/* PROJECTS */
-
 /* POLAROIDS */
 
 .desk {
@@ -593,7 +596,6 @@ figure a {
     color: rgb(255 123 0);
 }
 
-
 .haikyuu-button {
     background-color: rgb(255 123 0);
     font-weight: 600;
@@ -609,6 +611,35 @@ figure a {
 .haikyuu-button:hover {
     background-color: rgb(55 54 68);
     color: rgb(255 123 0);
+}
+
+.orange-subtext {
+    text-transform: lowercase;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 1;
+    color: rgb(255 123 0);
+}
+
+.text-right p {
+    font-size: 0.910em;
+}
+
+/* HAIKYUU MOBILE */
+
+@media (min-width: 768px) {
+    .haikyuu-prototype {
+        text-decoration: none;
+        font-size: 1.8em;
+        font-weight: 600;
+        color: rgb(0 0 0);
+    }
+
+    .haikyuu-prototype:hover {
+        color: rgb(255 123 0);
+        text-decoration: line-through;
+    }
 }
 
 
@@ -973,4 +1004,103 @@ div.gallery ul li img:hover {
         margin: 0;
         padding: 0;
     }
+}
+
+
+/* MOUSE SCROLL */
+
+#mouse-scroll {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#mouse-scroll a {
+    padding-top: 60px;
+}
+
+#mouse-scroll a span {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    width: 30px;
+    height: 50px;
+    margin-left: -15px;
+    border: 2px solid rgb(0 0 0);
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+#mouse-scroll a span::before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: rgb(0 0 0);
+    border-radius: 100%;
+    -webkit-animation: sdb10 2s infinite;
+    animation: sdb10 2s infinite;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb10 {
+    0% {
+        -webkit-transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: translate(0, 20px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes sdb10 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    80% {
+        transform: translate(0, 20px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.demo a {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font: normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+}
+
+.demo a:hover {
+    opacity: .5;
 }
