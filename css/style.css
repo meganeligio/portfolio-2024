@@ -44,7 +44,7 @@ body {
     font-family: var(--body-font);
     background-color: var(--background-color);
     min-height: 100vh;
-    font-size: 84%;
+    font-size: 85.75%;
     scrollbar-color: var(--title-color);
     /* Mozilla scrollbar fallback */
     cursor: url('../fav-icon/ghoopy-side/favicon-32x32.png'), auto;
@@ -109,10 +109,6 @@ section {
 /* MOBILE */
 
 @media (min-width: 768px) {
-    body {
-        font-size: 85.75%;
-    }
-
     h1 {
         font-family: 'Fraunces', serif;
         font-weight: 600;
@@ -121,12 +117,6 @@ section {
         text-transform: lowercase;
         margin-bottom: 0;
         margin-top: 1.5em;
-    }
-
-    section {
-        padding: 1em;
-        display: grid;
-        justify-content: center;
     }
 }
 
@@ -157,38 +147,16 @@ section {
     margin-bottom: .2em;
 }
 
-.haikyuu-prototype {
+.linked {
     text-decoration: none;
     font-size: 1.6em;
     font-weight: 600;
     color: rgb(0 0 0);
 }
 
-.haikyuu-prototype:hover {
-    color: rgb(255 123 0);
-    text-decoration: line-through;
-}
-
 .download-pg {
     margin-top: 1.5em;
     text-align: center;
-}
-
-.button {
-    background-color: rgb(255 123 0);
-    font-weight: 600;
-    color: rgb(255 255 255);
-    border: none;
-    text-transform: uppercase;
-    padding: .7em 3em;
-    border-radius: 2em;
-    font-size: 1.3em;
-    text-decoration: none;
-}
-
-.button:hover {
-    background-color: rgb(55 54 68);
-    color: rgb(255 123 0);
 }
 
 .customs-app {
@@ -620,6 +588,11 @@ figure a {
 
 .text-right p {
     font-size: 0.910em;
+}
+
+.haikyuu-prototype:hover {
+    color: rgb(255 123 0);
+    text-decoration: line-through;
 }
 
 /* HAIKYUU MOUSE SCROLL */
