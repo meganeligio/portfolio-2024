@@ -552,10 +552,6 @@ figure a {
 
 /* HAIKYUU */
 
-.haikyuu-bg {
-    background-color: rgb(255 255 255);
-}
-
 .haikyuu-orange {
     color: rgb(255 123 0);
 }
@@ -688,6 +684,21 @@ figure a {
         color: rgb(255 123 0);
         text-decoration: line-through;
     }
+}
+
+
+/* ANI BLITZ */
+
+.AB-purple {
+    color: rgb(197 103 227);
+}
+
+.AB-pink {
+    color: rgb(255 164 182);
+}
+
+.right-challenge {
+    text-align: right;
 }
 
 
