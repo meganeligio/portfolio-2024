@@ -341,10 +341,6 @@ video {
     margin: 0 auto;
 }
 
-.container.narrow {
-    max-width: 610px;
-}
-
 
 /* FOOTER */
 
@@ -1015,13 +1011,13 @@ div.gallery ul li img:hover {
     height: 100%;
 }
 
-#mouse-scroll a {
+#mouse-scroll {
     padding-top: 60px;
 }
 
-#mouse-scroll a span {
+#mouse-scroll span {
     position: absolute;
-    top: 100px;
+    top: 60px;
     left: 50%;
     width: 30px;
     height: 50px;
@@ -1031,7 +1027,7 @@ div.gallery ul li img:hover {
     box-sizing: border-box;
 }
 
-#mouse-scroll a span::before {
+#mouse-scroll span::before {
     position: absolute;
     top: 10px;
     left: 50%;
@@ -1086,7 +1082,7 @@ div.gallery ul li img:hover {
     }
 }
 
-.demo a {
+.demo span {
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -1101,6 +1097,6 @@ div.gallery ul li img:hover {
     transition: opacity .3s;
 }
 
-.demo a:hover {
+.demo span:hover {
     opacity: .5;
 }
