@@ -281,6 +281,27 @@ video {
 /* HAIKYUU */
 
 @media (min-width: 768px) {
+    .swapped img {
+        position: relative;
+        top: 3.7em;
+        left: -3.7em;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.context .row>.column {
+    margin: 0;
+
+    @media (min-width: 768px) {
+        &.one-third {
+            width: 33%;
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
     .haikyuu-wireframes {
         position: relative;
     }
