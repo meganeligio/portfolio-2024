@@ -66,7 +66,7 @@ h1 {
 
 h2 {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 0;
     font-size: 2em;
 }
@@ -118,7 +118,15 @@ section {
         margin-bottom: 0;
         margin-top: 1.5em;
     }
+
+    .linked {
+        text-decoration: none;
+        font-size: 1.8em;
+        font-weight: 600;
+        color: rgb(0 0 0);
+    }
 }
+
 
 /* STRICTLY FOR SUBPAGES */
 
@@ -261,6 +269,15 @@ video {
     }
 }
 
+.caption-animations .row {
+    align-items: normal;
+    text-align: center;
+}
+
+.caption-animations p {
+    margin-bottom: 2em;
+}
+
 /* HAIKYUU */
 
 @media (min-width: 768px) {
@@ -337,13 +354,15 @@ video {
     }
 }
 
-.caption-animations .row {
+.ab-customs .row {
     align-items: normal;
     text-align: center;
 }
 
-.caption-animations p {
-    margin-bottom: 2em;
+.ab-customs h4 {
+    text-transform: uppercase;
+    margin-top: 0;
+    font-weight: 500;
 }
 
 
@@ -592,8 +611,7 @@ figure a {
 }
 
 
-/* IDLE CAFE */
-
+/* PROJECTS */
 
 /* HAIKYUU */
 
@@ -715,23 +733,6 @@ figure a {
     }
 }
 
-/* HAIKYUU MOBILE */
-
-@media (min-width: 768px) {
-    .linked {
-        text-decoration: none;
-        font-size: 1.8em;
-        font-weight: 600;
-        color: rgb(0 0 0);
-    }
-
-    .haikyuu-prototype:hover {
-        color: rgb(255 123 0);
-        text-decoration: line-through;
-    }
-}
-
-
 /* ANI BLITZ */
 
 .ab-purple {
@@ -744,6 +745,32 @@ figure a {
 
 .right-challenge {
     text-align: right;
+}
+
+.ab-prototype:hover {
+    color: rgb(197 103 227);
+    text-decoration: line-through;
+}
+
+.ab-button {
+    background-color: rgb(197 103 227);
+    font-weight: 600;
+    color: rgb(255 255 255);
+    border: none;
+    text-transform: uppercase;
+    padding: .7em 3em;
+    border-radius: 2em;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+.ab-button:hover {
+    background-color: rgb(63 126 198);
+    color: rgb(255 164 182);
+}
+
+.customs-h2 {
+    margin-top: 2.5em;
 }
 
 /* ANI BLITZ SCROLL */
@@ -1188,20 +1215,3 @@ div.gallery ul li img:hover {
         padding: 0;
     }
 }
-
-
-/* MOUSE SCROLL */
-
-/* .demo span {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    z-index: 2;
-    display: inline-block;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    font: normal 400 20px/1 'Josefin Sans', sans-serif;
-    letter-spacing: .1em;
-    text-decoration: none;
-    transition: opacity .3s;
-} */
