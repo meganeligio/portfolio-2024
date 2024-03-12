@@ -442,7 +442,7 @@ video {
 
 .site-footer {
     background-color: rgb(61 85 85);
-    padding: 3rem;
+    padding: 3em;
     color: rgb(225 252 213);
 }
 
@@ -456,7 +456,7 @@ video {
     color: rgb(225 252 213);
     text-decoration: none;
     text-transform: uppercase;
-    padding: 1em;
+    padding: 0;
 }
 
 
@@ -626,11 +626,14 @@ video {
 /* POLAROIDS */
 
 .desk {
-    /* width: 100%;
+    width: 100%;
     height: 100vh;
+    background-image: url(../img/home-hero.svg);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     overflow: hidden;
-    position: fixed; */
+    position: absolute;
 }
 
 .photos {
@@ -676,13 +679,13 @@ figure a {
 
 /* PROJECTS */
 
-.home-body {
-    background-image: url(/img/home-hero.svg);
+/* .home-body {
+    height: 100vh;
+    background-image: url(../img/home-hero.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* height: 100vh; */
-}
+} */
 
 /* HAIKYUU */
 
