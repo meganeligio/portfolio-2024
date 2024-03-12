@@ -86,7 +86,7 @@ p {
 }
 
 a:hover {
-    color: var(--title-color);
+    color: var(--title-border);
     cursor: url('../fav-icon/ghoopy-front/favicon-32x32.png'), auto;
 }
 
@@ -98,6 +98,9 @@ header {
     padding: 1em;
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
 }
 
 header a {
@@ -178,6 +181,55 @@ section {
 
 .text-centered {
     text-align: center;
+}
+
+
+/* PROJECTS BUTTONS */
+
+.next::after {
+    content: '\276F';
+    padding-left: 1em;
+}
+
+.previous::before {
+    content: '\276E';
+    padding-right: 1em;
+}
+
+.projects-button {
+    display: inline-block;
+    border: 1.5px solid rgb(0 0 0);
+    border-radius: 3em;
+    font-size: 11px;
+    padding: 1em 2em;
+    margin: .5em 1em .5em 1em;
+    color: rgb(0 0 0);
+    text-transform: lowercase;
+    text-decoration: none;
+}
+
+.projects-button:hover {
+    color: var(--title-border);
+    border: 1.5px solid var(--title-border);
+}
+
+@media (min-width: 768px) {
+    .projects-button {
+        font-size: 14px;
+        display: inline-block;
+        border: 1.5px solid rgb(0 0 0);
+        border-radius: 3em;
+        padding: 1em 2em;
+        margin: .5em 2em .5em 2em;
+        color: rgb(0 0 0);
+        text-transform: lowercase;
+        text-decoration: none;
+    }
+
+    .projects-button:hover {
+        color: var(--title-border);
+        border: 1.5px solid var(--title-border);
+    }
 }
 
 
@@ -380,12 +432,6 @@ video {
     text-align: center;
 }
 
-.ab-customs h4 {
-    text-transform: uppercase;
-    margin-top: 0;
-    font-weight: 500;
-}
-
 
 /* CONTAINER */
 
@@ -535,7 +581,7 @@ video {
     top: calc(50% - 1px);
     transform-origin: 50% 50%;
     transition: background-color 0.2s ease-in-out, top 0.2s 0.2s ease-out, transform 0.2s linear;
-    width: 26px;
+    width: 30px;
     border-radius: 1em;
 }
 
@@ -585,10 +631,12 @@ video {
 .desk {
     width: 100%;
     height: 100vh;
+    background-image: url(/img/home-hero.svg);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     overflow: hidden;
-    position: fixed;
-    transition: filter .2s ease;
+    position: absolute;
 }
 
 .photos {
@@ -794,7 +842,13 @@ figure a {
     margin-top: 2.5em;
 }
 
-/* ANI BLITZ SCROLL */
+.ab-customs h4 {
+    text-transform: uppercase;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+/* ANI BLITZ MOUSE SCROLL */
 
 #ab-scroll {
     position: relative;
@@ -870,6 +924,54 @@ figure a {
 
     100% {
         opacity: 0;
+    }
+}
+
+/* IDLE CAFE */
+
+.ic-bg {
+    background-color: rgb(36 39 42);
+    color: rgb(234 245 222);
+    text-align: center;
+}
+
+.ic-green {
+    color: rgb(205 222 0);
+}
+
+.ic-button {
+    display: inline-block;
+    border: 1.5px solid rgb(234 245 222);
+    border-radius: 3em;
+    font-size: 11px;
+    padding: 1em 2em;
+    margin: .5em 1em .5em 1em;
+    color: rgb(234 245 222);
+    text-transform: lowercase;
+    text-decoration: none;
+}
+
+.ic-button:hover {
+    color: rgb(205 222 0);
+    border: 1.5px solid rgb(205 222 0);
+}
+
+@media (min-width: 768px) {
+    .ic-button {
+        font-size: 14px;
+        display: inline-block;
+        border: 1.5px solid rgb(234 245 222);
+        border-radius: 3em;
+        padding: 1em 2em;
+        margin: .5em 2em .5em 2em;
+        color: rgb(234 245 222);
+        text-transform: lowercase;
+        text-decoration: none;
+    }
+
+    .ic-button:hover {
+        color: rgb(205 222 0);
+        border: 1.5px solid rgb(205 222 0);
     }
 }
 
