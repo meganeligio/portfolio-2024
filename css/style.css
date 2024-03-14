@@ -682,10 +682,12 @@ figure a {
 
 .home-body {
     height: 110vh;
+    /* width: 1800px; */
     background: url(../img/home-hero.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    /* object-fit: contain; */
 }
 
 /* HAIKYUU */
