@@ -517,10 +517,6 @@ video {
 .desk {
     width: 100%;
     min-height: 100svh;
-    /* background-image: url(../img/home-hero.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
     overflow: hidden;
     position: absolute;
 }
@@ -605,7 +601,7 @@ video {
 .challenge,
 .solution {
     margin: 6em 0;
-    text-wrap: balance;
+    text-wrap: pretty;
 }
 
 .challenge {
@@ -627,7 +623,6 @@ video {
     .challenge,
     .solution {
         margin: 6em 0;
-        text-wrap: balance;
     }
 
     .overview {
@@ -927,6 +922,11 @@ video {
     }
 }
 
+/* HELLO STICKERS */
+.stickers-bg {
+    background-color: rgb(220 129 108);
+}
+
 /* ANI BLITZ */
 
 .ab-purple {
@@ -984,7 +984,7 @@ video {
 
 #ab-scroll span {
     position: absolute;
-    top: 40px;
+    top: -25px;
     left: 50%;
     width: 30px;
     height: 50px;
