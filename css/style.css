@@ -691,6 +691,13 @@ video {
     text-align: center;
 }
 
+.hero-h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4em;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
 /* PROJECTS BUTTONS */
 
 .projects {
@@ -923,11 +930,22 @@ video {
 }
 
 /* HELLO STICKERS */
+
 .stickers-bg {
     background-color: rgb(220 129 108);
 }
 
 /* ANI BLITZ */
+
+.ab-header {
+    background: rgb(197, 103, 227);
+}
+
+.ab-hero {
+    background: rgb(197, 103, 227);
+    background: linear-gradient(180deg, rgba(197, 103, 227, 1) 0%, rgba(63, 126, 198, 1) 95%);
+    height: 90vh;
+}
 
 .ab-purple {
     color: rgb(197 103 227);
