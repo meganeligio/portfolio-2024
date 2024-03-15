@@ -84,7 +84,7 @@
 
         <div class="photos">
 
-            <h3 class="desk-instructions">click and drag me around! ٩(˘◡˘)۶</h3>
+            <h3 class="desk-instructions">click anywhere to scatter! ٩(˘◡˘)۶</h3>
 
             <div id="idle-cafe" class="drag" data-i="0">
 
@@ -92,7 +92,7 @@
                             alt="thumbnail of idle cafe project"
                             onerror="this.parentElement.parentElement.style.display = 'none';"></a>
 
-                    <figcaption>idle café</figcaption>
+                    <figcaption>IDLE CAFÉ</figcaption>
 
                 </figure>
 
@@ -104,55 +104,55 @@
                             alt="thumbnail of haikyuu!! project"
                             onerror="this.parentElement.parentElement.style.display = 'none';"></a>
 
-                    <figcaption>haikyuu!!</figcaption>
+                    <figcaption>HAIKYUU!!</figcaption>
 
                 </figure>
 
             </div>
 
-            <div class="drag" data-i="2">
+            <div id="hello-stickers" class="drag" data-i="2">
 
                 <figure class="spin"><a href="hello-stickers/index.html"><img src="https://picsum.photos/400?image=472"
                             alt="Photo by Dustin Scarpitti"
                             onerror="this.parentElement.parentElement.style.display = 'none';"></a>
 
-                    <figcaption>hello stickers</figcaption>
+                    <figcaption>HELLO STICKERS</figcaption>
 
                 </figure>
 
             </div>
 
-            <div class="drag" data-i="3">
+            <div id="ani-blitz" class="drag" data-i="3">
 
                 <figure class="spin"><a href="ani-blitz/index.html"><img src="img/ani-blitz.jpg"
                             alt="Photo by Dominik Martin"
                             onerror="this.parentElement.parentElement.style.display = 'none';"></a>
 
-                    <figcaption>ani blitz!</figcaption>
+                    <figcaption>ANI BLITZ!</figcaption>
 
                 </figure>
 
             </div>
 
-            <div class="drag" data-i="4">
+            <div id="w-aquarium" class="drag" data-i="4">
 
                 <figure class="spin"><a href="#"><img src="https://picsum.photos/400?image=49"
                             alt="Photo by Margaret Barley"
                             onerror="this.parentElement.parentElement.style.display = 'none';"></a>
 
-                    <figcaption>waikiki aquarium</figcaption>
+                    <figcaption>Waikiki Aquarium</figcaption>
 
                 </figure>
 
             </div>
 
-            <div class="drag" data-i="5">
+            <div id="anaha-magazine" class="drag" data-i="5">
 
                 <figure class="spin"><a href="#"><img src="https://picsum.photos/400?image=459"
                             alt="Photo by Jake Givens"
                             onerror="this.parentElement.parentElement.style.display = 'none';"></a>
 
-                    <figcaption>ka hue anaha magazine</figcaption>
+                    <figcaption>Ka Hue Anaha Magazine</figcaption>
 
                 </figure>
 
@@ -216,14 +216,33 @@
 
             var photo1 = $('#idle-cafe');
             var photo1spin = $('#idle-cafe .spin');
-            TweenLite.to(photo1, .5, { delay: 1.1, x: -100, y: -200 });
-            TweenLite.to(photo1spin, .5, { delay: 1.1, rotation: 25 });
+            TweenLite.to(photo1, .5, { delay: 1.1, x: -290, y: -60 });
+            TweenLite.to(photo1spin, .5, { delay: 1.1, rotation: -25 });
 
             var photo2 = $('#haikyuu');
             var photo2spin = $('#haikyuu .spin');
-            TweenLite.to(photo2, .5, { delay: 1.1, x: 120, y: -100 });
-            TweenLite.to(photo2spin, .5, { delay: 1.1, rotation: -8 });
+            TweenLite.to(photo2, .5, { delay: 1.1, x: -80, y: -150 });
+            TweenLite.to(photo2spin, .5, { delay: 1.1, rotation: 15 });
 
+            var photo3 = $('#hello-stickers');
+            var photo3spin = $('#hello-stickers .spin');
+            TweenLite.to(photo3, .5, { delay: 1.1, x: 100, y: -60 });
+            TweenLite.to(photo3spin, .5, { delay: 1.1, rotation: -5 });
+
+            var photo4 = $('#ani-blitz');
+            var photo4spin = $('#ani-blitz .spin');
+            TweenLite.to(photo4, .5, { delay: 1.1, x: 290, y: -150 });
+            TweenLite.to(photo4spin, .5, { delay: 1.1, rotation: 5 });
+
+            var photo5 = $('#w-aquarium');
+            var photo5spin = $('#w-aquarium .spin');
+            TweenLite.to(photo5, .5, { delay: 1.1, x: 250, y: 140 });
+            TweenLite.to(photo5spin, .5, { delay: 1.1, rotation: -15 });
+
+            var photo6 = $('#anaha-magazine');
+            var photo6spin = $('#anaha-magazine .spin');
+            TweenLite.to(photo6, .5, { delay: 1.1, x: -90, y: 100 });
+            TweenLite.to(photo6spin, .5, { delay: 1.1, rotation: 5 });
         };
 
         function scatterPhotos() {
