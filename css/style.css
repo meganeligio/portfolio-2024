@@ -312,6 +312,10 @@ video {
     text-align: center;
 }
 
+.ab-customs h4 {
+    margin-bottom: 2em;
+}
+
 
 /* CONTAINER */
 
@@ -768,12 +772,16 @@ video {
     color: rgb(239 134 206);
 }
 
-.ab-button {
+.ic-orange {
     color: rgb(255 144 21);
 }
 
 .ic-green {
     color: rgb(205 222 0);
+}
+
+.ic-black {
+    color: rgb(36 39 42);
 }
 
 .ic-button {
@@ -791,6 +799,25 @@ video {
 .ic-button:hover {
     color: rgb(205 222 0);
     border: 1.5px solid rgb(205 222 0);
+}
+
+.green-bg {
+    background-color: rgb(205 222 0);
+    color: rgb(36 39 42);
+    padding-bottom: 2em;
+}
+
+.ic-prototype:hover {
+    color: rgb(36 39 42);
+    text-decoration: line-through;
+}
+
+.bts-ic h4 {
+    margin-top: 0;
+    font-weight: 500;
+    text-transform: lowercase;
+    font-style: italic;
+    font-size: 1.4em;
 }
 
 @media (min-width: 768px) {
