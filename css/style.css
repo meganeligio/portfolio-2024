@@ -588,9 +588,9 @@ video {
         pointer-events: none;
 
         font-weight: 500;
-        font-family: var(--title-font);
+        font-family: var( --body-font);
         font-style: italic;
-        text-transform: lowercase;
+        /* text-transform: lowercase; */
     }
 }
 
