@@ -80,6 +80,7 @@ h4 {
     text-transform: uppercase;
     font-weight: 400;
     margin-top: .2em;
+    margin-bottom: 2em;
 }
 
 p {
@@ -312,7 +313,28 @@ video {
     text-align: center;
 }
 
+/* IDLE CAFE */
+
 .ic-customs .row {
+    align-items: normal;
+    text-align: center;
+}
+
+/* HELLO STICKERS */
+
+.hs-customs .row {
+    align-items: normal;
+    text-align: center;
+}
+
+.hs-icustoms .row {
+    align-items: normal;
+    text-align: center;
+}
+
+/* WAQ */
+
+.holiday-card .row {
     align-items: normal;
     text-align: center;
 }
@@ -701,13 +723,6 @@ video {
     text-align: center;
 }
 
-.hero-h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 4em;
-    margin-bottom: 0;
-    margin-top: 0;
-}
-
 /* PROJECTS BUTTONS */
 
 .projects {
@@ -1051,6 +1066,116 @@ video {
     background-color: rgb(220 129 108);
 }
 
+.white-bg {
+    background-color: rgb(250 254 239);
+}
+
+.hs-blue {
+    color: rgb(145 158 192);
+}
+
+.hs-drk-orange {
+    color: rgb(112 42 34);
+}
+
+.hs-orange {
+    color: rgb(190 101 87);
+}
+
+.hs-customs h4 {
+    color: rgb(255 255 255);
+    font-style: italic;
+    text-transform: lowercase;
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+.hs-icustoms h4 {
+    text-transform: uppercase;
+    margin-top: 0;
+    font-weight: 600;
+    margin-bottom: 2em;
+}
+
+/* HELLO STICKERS MOUSE SCROLL */
+
+#hs-scroll {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#hs-scroll {
+    padding-top: 60px;
+}
+
+#hs-scroll span {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    width: 30px;
+    height: 50px;
+    margin-left: -15px;
+    border: 2px solid rgb(145 158 192);
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+#hs-scroll span::before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: rgb(145 158 192);
+    border-radius: 100%;
+    -webkit-animation: sdb10 2s infinite;
+    animation: sdb10 2s infinite;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb10 {
+    0% {
+        -webkit-transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: translate(0, 20px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes sdb10 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    80% {
+        transform: translate(0, 20px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 /* ANI BLITZ */
 
 .ab-header {
@@ -1138,6 +1263,119 @@ video {
     height: 6px;
     margin-left: -3px;
     background-color: rgb(197 103 227);
+    border-radius: 100%;
+    -webkit-animation: sdb10 2s infinite;
+    animation: sdb10 2s infinite;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb10 {
+    0% {
+        -webkit-transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: translate(0, 20px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes sdb10 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    80% {
+        transform: translate(0, 20px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* WAQ */
+
+.waq-blue {
+    color: rgb(49 110 201);
+}
+
+.waq-hero {
+    background-color: rgb(49 110 201);
+    min-height: 90vh;
+    text-align: left;
+    align-items: center;
+    color: rgb(255 255 255);
+}
+
+.waq-hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5em;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.waq-hero p {
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.waq-hero h3 {
+    font-family: 'Fraunces', serif;
+    text-transform: lowercase;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+/* WAQ MOUSE SCROLL */
+
+#waq-scroll {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#waq-scroll {
+    padding-top: 60px;
+}
+
+#waq-scroll span {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 30px;
+    height: 50px;
+    margin-left: -15px;
+    border: 2px solid rgb(49 110 201);
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+#waq-scroll span::before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: rgb(49 110 201);
     border-radius: 100%;
     -webkit-animation: sdb10 2s infinite;
     animation: sdb10 2s infinite;
