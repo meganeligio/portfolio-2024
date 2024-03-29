@@ -120,8 +120,6 @@ section {
 /* LOGO */
 
 .site-logo {
-    font-family: Helvetica, sans-serif;
-    font-weight: 500;
     padding: 1em;
 }
 
@@ -588,7 +586,7 @@ video {
         pointer-events: none;
 
         font-weight: 500;
-        font-family: var( --body-font);
+        font-family: var(--body-font);
         font-style: italic;
         /* text-transform: lowercase; */
     }
