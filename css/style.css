@@ -92,7 +92,7 @@ p {
 
 a:hover {
     color: var(--title-border);
-    cursor: url('../fav-icon/ghoopy-front/favicon-32x32.png'), auto;
+    cursor: url('../fav-icon/ghoopy-waving/favicon.ico'), auto;
 }
 
 strong {
@@ -466,7 +466,7 @@ video {
 .toggle-menu {
     background-color: transparent;
     border: none;
-    cursor: pointer;
+    cursor: url('../fav-icon/ghoopy-waving/favicon.ico'), auto;
     display: inline-block;
     float: right;
     height: 50px;
@@ -637,7 +637,7 @@ video {
         transform: translateX(-50%) translateY(-50%);
         width: 17px;
         height: 17px;
-        cursor: pointer;
+        /* cursor: pointer; */
         opacity: .5;
         /* Set the cursor to pointer */
     }
@@ -1739,7 +1739,7 @@ code {
     color: inherit;
     outline: inherit;
     border: none;
-    cursor: url('../fav-icon/ghoopy-front/favicon-32x32.png'), auto;
+    cursor: url('../fav-icon/ghoopy-waving/favicon.ico'), auto;
     height: inherit;
     width: inherit;
 }
@@ -1761,7 +1761,7 @@ code {
 .close:focus {
     color: var(--title-color);
     text-decoration: none;
-    cursor: url('../fav-icon/ghoopy-front/favicon-32x32.png'), auto;
+    cursor: url('../fav-icon/ghoopy-waving/favicon.ico'), auto;
 }
 
 /* MOBILE */
