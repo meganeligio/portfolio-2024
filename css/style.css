@@ -47,7 +47,7 @@ body {
     font-size: 85.75%;
     scrollbar-color: var(--title-color);
     /* Mozilla scrollbar fallback */
-    cursor: url('../fav-icon/ghoopy-side/favicon-32x32.png'), auto;
+    cursor: url('../fav-icon/ghoopy-default/favicon.ico'), auto;
 }
 
 .about-body {
