@@ -567,7 +567,7 @@ video {
     display: flex;
     justify-content: center;
     position: relative;
-    top: 15px;
+    top: 45px;
 }
 
 .desk-instructions h3 {
@@ -632,8 +632,8 @@ video {
 
     .pulsating-circle {
         position: absolute;
-        left: 145px;
-        top: 665px;
+        left: 90px;
+        top: 500px;
         transform: translateX(-50%) translateY(-50%);
         width: 17px;
         height: 17px;
@@ -700,14 +700,14 @@ video {
     font-family: var(--body-font);
     font-weight: 600;
     position: relative;
-    top: 590px;
-    left: 150px;
+    top: 420px;
+    left: 85px;
 }
 
 /* PROJECTS */
 
 .home-body {
-    height: 100vh;
+    height: 112vh;
     background: url(../img/home-hero.svg);
     background-size: cover;
     background-position: center;
