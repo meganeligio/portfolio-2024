@@ -727,12 +727,12 @@ video {
 .overview,
 .challenge,
 .solution {
-    margin: 6em 0;
-    text-wrap: pretty;
+    margin-top: 2em;
+    max-width: 460px;
 }
 
-.challenge {
-    text-align: right;
+.solution {
+    margin-bottom: 6em;
 }
 
 @media (min-width: 768px) {
@@ -745,23 +745,8 @@ video {
         margin-top: 1.5em;
     }
 
-    .overview,
-    .challenge,
     .solution {
-        margin: 6em 0;
-    }
-
-    .overview {
-        padding-right: 25%;
-    }
-
-    .challenge {
-        text-align: right;
-        padding-left: 25%;
-    }
-
-    .solution {
-        padding-right: 25%;
+        margin-top: 6em;
     }
 
     .linked {
@@ -769,12 +754,7 @@ video {
     }
 }
 
-.solution {
-    margin-top: 3em;
-}
-
 .sub-titles {
-    font-weight: 500;
     margin-top: 2.5em;
 }
 
@@ -815,6 +795,12 @@ video {
 
 .text-centered {
     text-align: center;
+}
+
+.text-container {
+    max-width: 460px;
+    margin: auto;
+    padding-bottom: 1em;
 }
 
 /* PROJECTS BUTTONS */
@@ -1388,7 +1374,6 @@ video {
 
 .overview-waq p {
     max-width: 550px;
-    text-wrap: pretty;
 }
 
 .seasonal-promo h1 {
@@ -1397,7 +1382,6 @@ video {
 
 .coupon-text p {
     max-width: 460px;
-    text-wrap: pretty;
     margin: auto;
     padding-bottom: 1em;
 }
@@ -1405,7 +1389,6 @@ video {
 @media (min-width: 768px) {
     .entry-door p {
         max-width: 460px;
-        text-wrap: pretty;
     }
 }
 
@@ -1496,7 +1479,6 @@ video {
 
 .overview-magazine {
     max-width: 460px;
-    text-wrap: pretty;
 }
 
 .kha-yellow {
