@@ -58,7 +58,7 @@ h1 {
     font-family: 'Fraunces', serif;
     font-weight: 600;
     font-style: italic;
-    font-size: 4.8em;
+    font-size: 4.5em;
     text-transform: lowercase;
     margin-bottom: 0;
     margin-top: 2.5em;
@@ -344,7 +344,7 @@ video {
 /* CONTAINER */
 
 .container {
-    max-width: 610px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -712,6 +712,10 @@ video {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.hero {
+    width: 100%;
 }
 
 .overview,
@@ -1462,6 +1466,15 @@ video {
     line-height: 1;
 }
 
+.overview-magazine {
+    max-width: 550px;
+    text-wrap: pretty;
+}
+
+.kha-yellow {
+    color: rgb(246 179 25);
+}
+
 /* KA HUE ANAHA MOUSE SCROLL */
 
 #kha-scroll {
@@ -1481,7 +1494,7 @@ video {
     width: 30px;
     height: 50px;
     margin-left: -15px;
-    border: 2px solid rgb(0 0 0);
+    border: 2px solid rgb(246 179 25);
     border-radius: 50px;
     box-sizing: border-box;
 }
@@ -1494,7 +1507,7 @@ video {
     width: 6px;
     height: 6px;
     margin-left: -3px;
-    background-color: rgb(0 0 0);
+    background-color: rgb(246 179 25);
     border-radius: 100%;
     -webkit-animation: sdb10 2s infinite;
     animation: sdb10 2s infinite;
