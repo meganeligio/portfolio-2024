@@ -1388,6 +1388,51 @@ video {
     color: rgb(255 164 182);
 }
 
+.tags-blitz {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 5.8em;
+    text-align: center;
+}
+
+.tags-blitz li {
+    display: inline-block;
+    background: rgb(197 103 227);
+    border-radius: 2em;
+    padding: .5em 2em;
+    margin: .3em .2em .5em .2em;
+    color: rgb(255 255 255);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.title-blitz {
+    text-align: center;
+}
+
+.title-blitz h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5em;
+    font-style: normal;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.title-blitz h2 {
+    font-family: 'Fraunces', serif;
+    text-transform: lowercase;
+    font-style: italic;
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 4em;
+    color: rgb(63 126 198);
+}
+
+.title-blitz p {
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
 .ab-prototype:hover {
     color: rgb(197 103 227);
     text-decoration: line-through;
