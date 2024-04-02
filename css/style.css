@@ -619,6 +619,7 @@ video {
         align-items: center;
         justify-content: center;
         position: absolute;
+        /* z-index: 100; */
     }
 
     .photos figure {

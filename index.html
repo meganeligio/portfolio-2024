@@ -80,8 +80,6 @@
 
     <main>
 
-
-
         <div class="desk">
 
             <div class="desk-instructions">
@@ -229,6 +227,9 @@
 
         function initialScatter() {
             var iboard = $('.photos');
+            var board = $('.photos');
+            var drag = $('.drag');
+            var spin = $('.spin');
 
             var photo1 = $('#idle-cafe');
             var photo1spin = $('#idle-cafe .spin');
@@ -259,25 +260,6 @@
             var photo6spin = $('#anaha-magazine .spin');
             TweenLite.to(photo6, .5, { delay: 1.1, x: -80, y: 160 });
             TweenLite.to(photo6spin, .5, { delay: 1.1, rotation: 5 });
-        };
-
-        function scatterPhotos() {
-            var board = $('.photos');
-            var drag = $('.drag');
-            var spin = $('.spin');
-
-            $(drag.get().reverse()).each(function (index) {
-                index = index + 1;
-                TweenLite.to(this, .5, {
-                    delay: index * 0.1,
-                    x: getRandomInt(board.width() / 2.7 * -1, board.width() / 2.7),
-                    y: getRandomInt(board.height() / 2.7 * -1, board.height() / 2.7)
-                });
-                TweenLite.to($(this).find('.spin'), .5, {
-                    delay: index * 0.1,
-                    rotation: getRandomInt(-30, 30)
-                });
-            });
 
             Draggable.create(drag, {
                 bounds: board,
@@ -334,6 +316,28 @@
                 minDuration: 0,
                 bounds: { minRotation: -30, maxRotation: 30 }
             });
+
+        };
+
+        function scatterPhotos() {
+            var board = $('.photos');
+            var drag = $('.drag');
+            var spin = $('.spin');
+
+            $(drag.get().reverse()).each(function (index) {
+                index = index + 1;
+                TweenLite.to(this, .5, {
+                    delay: index * 0.1,
+                    x: getRandomInt(board.width() / 2.7 * -1, board.width() / 2.7),
+                    y: getRandomInt(board.height() / 2.7 * -1, board.height() / 2.7)
+                });
+                TweenLite.to($(this).find('.spin'), .5, {
+                    delay: index * 0.1,
+                    rotation: getRandomInt(-30, 30)
+                });
+            });
+
+
         }
 
         function getRandomInt(min, max) {
