@@ -735,6 +735,10 @@ video {
     max-width: 460px;
 }
 
+.overview {
+    margin-top: 6em;
+}
+
 .solution {
     margin-bottom: 6em;
 }
@@ -799,6 +803,13 @@ video {
 
 .text-centered {
     text-align: center;
+}
+
+.softwares p {
+    margin-top: 6em;
+    margin-bottom: 3em;
+    padding-left: 1em;
+    text-transform: uppercase;
 }
 
 /* PROJECTS BUTTONS */
