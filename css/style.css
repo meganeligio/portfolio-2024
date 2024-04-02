@@ -1229,10 +1229,6 @@ video {
     background-color: rgb(220 129 108);
 }
 
-.white-bg {
-    background-color: rgb(250 254 239);
-}
-
 .hs-blue {
     color: rgb(145 158 192);
 }
@@ -1243,6 +1239,53 @@ video {
 
 .hs-orange {
     color: rgb(190 101 87);
+}
+
+.tags-stickers {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 5.8em;
+    text-align: center;
+}
+
+.tags-stickers li {
+    display: inline-block;
+    background: rgb(145 158 192);
+    border-radius: 2em;
+    padding: .5em 2em;
+    margin: .3em .2em .5em .2em;
+    color: rgb(255 255 255);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.title-stickers {
+    text-align: center;
+}
+
+.title-stickers h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5em;
+    font-style: normal;
+    text-transform: uppercase;
+    margin-top: .3em;
+    line-height: 1;
+    margin-bottom: .3em;
+}
+
+.title-stickers h2 {
+    font-family: 'Fraunces', serif;
+    color: rgb(190 101 87);
+    text-transform: lowercase;
+    font-style: italic;
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 4em;
+}
+
+.title-stickers p {
+    text-transform: uppercase;
+    margin-bottom: 0;
 }
 
 .hs-customs h4 {
@@ -1275,7 +1318,7 @@ video {
     width: 30px;
     height: 50px;
     margin-left: -15px;
-    border: 2px solid rgb(145 158 192);
+    border: 2px solid rgb(112 42 34);
     border-radius: 50px;
     box-sizing: border-box;
 }
@@ -1288,7 +1331,7 @@ video {
     width: 6px;
     height: 6px;
     margin-left: -3px;
-    background-color: rgb(145 158 192);
+    background-color: rgb(112 42 34);
     border-radius: 100%;
     -webkit-animation: sdb10 2s infinite;
     animation: sdb10 2s infinite;
