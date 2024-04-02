@@ -218,17 +218,6 @@ video {
 
 /* HAIKYUU */
 
-/* @media (min-width: 768px) {
-    .swapped img {
-        position: relative;
-        top: 3.7em;
-        left: 2.5em;
-        bottom: 0;
-        right: 0;
-    }
-} */
-
-
 @media (min-width: 768px) {
     .haikyuu-wireframes {
         position: relative;
@@ -735,10 +724,6 @@ video {
     max-width: 460px;
 }
 
-.overview {
-    margin-top: 6em;
-}
-
 .solution {
     margin-bottom: 6em;
 }
@@ -1072,6 +1057,51 @@ video {
     color: rgb(255 123 0);
 }
 
+.tags-haikyuu {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 5.8em;
+    text-align: center;
+}
+
+.tags-haikyuu li {
+    display: inline-block;
+    background: rgb(255 123 0);
+    border-radius: 2em;
+    padding: .5em 2em;
+    margin: .3em .2em .5em .2em;
+    color: rgb(55 54 68);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.title-haikyuu {
+    text-align: center;
+}
+
+.title-haikyuu h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5em;
+    font-style: normal;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.title-haikyuu h2 {
+    font-family: 'Fraunces', serif;
+    text-transform: lowercase;
+    font-style: italic;
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 4em;
+    color: rgb(199 92 20);
+}
+
+.title-haikyuu p {
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
 .haikyuu-button {
     background-color: rgb(255 123 0);
     font-weight: 600;
@@ -1100,7 +1130,7 @@ video {
     font-style: italic;
     margin-top: 0;
     margin-bottom: 1em;
-    color: rgb(255 123 0);
+    color: rgb(199 92 20);
 }
 
 .haikyuu-prototype:hover {
