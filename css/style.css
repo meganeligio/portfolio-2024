@@ -335,7 +335,12 @@ video {
 
 /* WAQ */
 
-.holiday-card .row {
+.signs .row {
+    align-items: normal;
+    text-align: center;
+}
+
+.seasonal-promo .row {
     align-items: normal;
     text-align: center;
 }
@@ -736,8 +741,7 @@ video {
         font-size: 8em;
         font-style: italic;
         text-transform: lowercase;
-        margin-bottom: 0;
-        margin-top: 1.5em;
+        margin: 1.5em .1em 0 .1em;
     }
 
     .overview,
@@ -1378,7 +1382,17 @@ video {
 /* WAQ */
 
 .waq-blue {
-    color: rgb(49 110 201);
+    color: rgb(48 159 218);
+}
+
+.overview-waq {
+    max-width: 550px;
+    text-wrap: pretty;
+}
+
+.coupon-text p {
+    max-width: 550px;
+    text-align: center;
 }
 
 /* WAQ MOUSE SCROLL */
@@ -1400,7 +1414,7 @@ video {
     width: 30px;
     height: 50px;
     margin-left: -15px;
-    border: 2px solid rgb(49 110 201);
+    border: 2px solid rgb(48 159 218);
     border-radius: 50px;
     box-sizing: border-box;
 }
@@ -1413,7 +1427,7 @@ video {
     width: 6px;
     height: 6px;
     margin-left: -3px;
-    background-color: rgb(49 110 201);
+    background-color: rgb(48 159 218);
     border-radius: 100%;
     -webkit-animation: sdb10 2s infinite;
     animation: sdb10 2s infinite;
