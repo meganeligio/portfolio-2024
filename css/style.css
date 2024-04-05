@@ -1636,9 +1636,16 @@ video {
 }
 
 .overview-intern {
-    max-width: 460px;
-    margin-top: 2em;
     margin-bottom: 6em;
+}
+
+.overview-intern h2 {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.overview-intern p {
+    font-size: 1.5em;
 }
 
 .seasonal-promo h1 {
@@ -1653,6 +1660,17 @@ video {
 
 .entry-door p {
     max-width: 460px;
+}
+
+@media (min-width: 768px) {
+    .overview-intern h2 {
+        font-size: 1.3em;
+    }
+
+    .overview-intern p {
+        font-size: 1.9em;
+        max-width: 900px;
+    }
 }
 
 /* WAQ MOUSE SCROLL */
@@ -1789,6 +1807,14 @@ video {
 .title-magazine p {
     text-transform: uppercase;
     margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .title-magazine h1 {
+        line-height: normal;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 
 /* KA HUE ANAHA MOUSE SCROLL */
