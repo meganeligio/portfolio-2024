@@ -727,6 +727,7 @@ video {
 
 .overview h2 {
     font-size: 1.3em;
+    font-weight: 600;
 }
 
 .overview p {
@@ -751,7 +752,7 @@ video {
     .overview h2 {
         font-size: 1.3em;
     }
-    
+
     .overview p {
         font-size: 1.9em;
         max-width: 900px;
@@ -810,9 +811,9 @@ video {
 
 .softwares p {
     margin-bottom: 6em;
-    padding-left: 1em;
     text-transform: uppercase;
     text-align: right;
+    padding-right: 1em;
 }
 
 /* PROJECTS BUTTONS */
@@ -928,6 +929,7 @@ video {
     font-style: normal;
     text-transform: uppercase;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .title-idle h2 {
