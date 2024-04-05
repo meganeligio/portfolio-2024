@@ -60,14 +60,14 @@ h1 {
     font-style: italic;
     font-size: 4.5em;
     text-transform: lowercase;
-    margin-bottom: 0;
+    margin-bottom: .1em;
     margin-top: 1.5em;
 }
 
 h2 {
     text-transform: uppercase;
     font-weight: 500;
-    margin-bottom: 0;
+    margin-bottom: .1em;
     font-size: 2em;
 }
 
@@ -84,10 +84,6 @@ h4 {
     font-weight: 400;
     margin-top: .2em;
     margin-bottom: 2em;
-}
-
-p {
-    margin-top: .2em;
 }
 
 a:hover {
@@ -116,6 +112,10 @@ section {
     justify-content: center;
 }
 
+p {
+    margin-top: .2em;
+}
+
 
 /* LOGO */
 
@@ -142,10 +142,6 @@ img {
 .border-icon {
     border-radius: 15px;
 }
-
-/* .rotate {
-    transform: rotate(180deg);
-} */
 
 
 /* VIDEO */
@@ -299,6 +295,10 @@ video {
 
 /* IDLE CAFE */
 
+.white-bg .row {
+    align-items: normal;
+}
+
 .ic-customs .row {
     align-items: normal;
     text-align: center;
@@ -346,9 +346,10 @@ video {
     /* padding-bottom: 1em; */
 }
 
-.logo-container {
+.centered-container {
     max-width: 460px;
     margin: 0 auto;
+    padding-bottom: .6em;
 }
 
 
@@ -722,11 +723,14 @@ video {
 .challenge,
 .solution {
     margin-top: 2em;
-    max-width: 460px;
 }
 
-.solution {
-    margin-bottom: 6em;
+.overview h2 {
+    font-size: 1.3em;
+}
+
+.overview p {
+    font-size: 1.5em;
 }
 
 @media (min-width: 768px) {
@@ -736,15 +740,29 @@ video {
         font-size: 8em;
         font-style: italic;
         text-transform: lowercase;
-        margin-top: 1.5em;
+        margin-top: 1.9em;
     }
 
+    .challenge,
     .solution {
-        margin-top: 6em;
+        max-width: 460px;
+    }
+
+    .overview h2 {
+        font-size: 1.3em;
+    }
+    
+    .overview p {
+        font-size: 1.9em;
+        max-width: 900px;
     }
 
     .linked {
         font-size: 1.8em;
+    }
+
+    .customs-app {
+        line-height: normal;
     }
 }
 
@@ -779,7 +797,6 @@ video {
 }
 
 .customs-app {
-    text-align: right;
     line-height: 1;
 }
 
@@ -792,15 +809,16 @@ video {
 }
 
 .softwares p {
-    margin-top: 6em;
-    margin-bottom: 3em;
+    margin-bottom: 6em;
     padding-left: 1em;
     text-transform: uppercase;
+    text-align: right;
 }
 
 /* PROJECTS BUTTONS */
 
 .projects {
+    padding-top: 4em;
     padding-bottom: 6em;
 }
 
@@ -820,7 +838,7 @@ video {
     border-radius: 3em;
     font-size: 11px;
     padding: 1em 2em;
-    margin: .5em 1em .5em 1em;
+    margin: .5em 1em;
     color: rgb(0 0 0);
     text-decoration: none;
 }
@@ -837,7 +855,7 @@ video {
         border: 1.5px solid rgb(0 0 0);
         border-radius: 3em;
         padding: 1em 2em;
-        margin: .5em 2em .5em 2em;
+        margin: .5em 2em;
         color: rgb(0 0 0);
         text-decoration: none;
     }
@@ -853,6 +871,13 @@ video {
 .ic-bg {
     background-color: rgb(36 39 42);
     color: rgb(234 245 222);
+}
+
+.white-bg {
+    background-color: rgb(234 245 222);
+    color: rgb(36 39 42);
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 
 .ic-blue {
@@ -920,6 +945,10 @@ video {
     margin-bottom: 0;
 }
 
+.ic-logo {
+    padding-bottom: 5em;
+}
+
 .ic-button {
     display: inline-block;
     border: 1.5px solid rgb(234 245 222);
@@ -940,7 +969,7 @@ video {
 .green-bg {
     background-color: rgb(205 222 0);
     color: rgb(36 39 42);
-    padding-bottom: 2em;
+    padding-bottom: 3em;
 }
 
 .ic-prototype:hover {
@@ -953,6 +982,11 @@ video {
     margin-top: 0;
     font-weight: 600;
     margin-bottom: 2em;
+}
+
+.ic-customs p {
+    max-width: 480px;
+    margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -987,7 +1021,7 @@ video {
 
 #ic-scroll span {
     position: absolute;
-    top: -25px;
+    top: 40px;
     left: 50%;
     width: 30px;
     height: 50px;
