@@ -368,22 +368,128 @@ video {
 /* FOOTER */
 
 .site-footer {
-    background-color: rgb(61 85 85);
+    display: flex;
+    flex-flow: row wrap;
     padding: 3em;
     color: rgb(225 252 213);
+    background-color: rgb(61 85 85);
+}
+
+.site-footer .row {
+    align-items: normal;
+}
+
+.site-footer>* {
+    flex: 1 100%;
 }
 
 .site-footer ul {
     list-style: none;
-    margin: 0;
     padding: 0;
 }
 
-.site-footer a {
+.site-footer li {
+    line-height: 2em;
+}
+
+.social-nav ul {
+    display: flex;
+}
+
+.icons li {
+    font-size: 20px;
+    margin-right: 1em;
+    margin-left: 0;
+}
+
+.icons li a {
     color: rgb(225 252 213);
+}
+
+.icons li a:hover {
+    color: rgb(244 255 154);
+}
+
+.site-footer a {
     text-decoration: none;
+}
+
+.nav-pages li {
+    margin-bottom: 1em;
+}
+
+.nav-pages a {
+    color: rgb(225 252 213);
     text-transform: uppercase;
-    padding: 0;
+    font-size: 1.2em;
+}
+
+.selected a {
+    color: rgb(244 255 154);
+}
+
+.nav-title {
+    font-family: var(--body-font);
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+
+.footer-tags li {
+    display: inline-block;
+    background: rgb(244 255 154);
+    border-radius: .6em;
+    padding: .2em 2em;
+    margin: .3em .2em .5em .2em;
+    color: rgb(61 85 85);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .8em;
+}
+
+hr {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.legal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.legal-links {
+    display: flex;
+    align-items: center;
+}
+
+.heart {
+    color: rgb(225 252 213);
+}
+
+@media screen and (min-width: 768px) {
+    .legal .legal-links {
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .site-footer-nav>* {
+        flex: 1;
+    }
+
+    .nav-item--extra {
+        flex-grow: 2;
+    }
+
+    .footer-info {
+        flex: 1 0px;
+    }
+
+    .site-footer-nav {
+        flex: 2 0px;
+    }
 }
 
 
@@ -1134,6 +1240,7 @@ video {
     font-style: normal;
     text-transform: uppercase;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .title-haikyuu h2 {
@@ -1314,9 +1421,9 @@ video {
     font-size: 5em;
     font-style: normal;
     text-transform: uppercase;
-    margin-top: .3em;
+    margin-top: 0;
     line-height: 1;
-    margin-bottom: .3em;
+    margin-bottom: 0;
 }
 
 .title-stickers h2 {
@@ -1347,6 +1454,12 @@ video {
     margin-top: 0;
     font-weight: 600;
     margin-bottom: 2em;
+}
+
+@media (min-width: 768px) {
+    .title-stickers h1 {
+        line-height: normal;
+    }
 }
 
 /* HELLO STICKERS MOUSE SCROLL */
@@ -1466,6 +1579,7 @@ video {
     font-style: normal;
     text-transform: uppercase;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .title-blitz h2 {
@@ -1628,9 +1742,9 @@ video {
     font-size: 5em;
     font-style: normal;
     text-transform: uppercase;
-    margin-top: .3em;
+    margin-top: 0;
     line-height: 1;
-    margin-bottom: .3em;
+    margin-bottom: 0;
 }
 
 .title-waq h2 {
@@ -1665,8 +1779,13 @@ video {
     line-height: 1;
 }
 
+.coupon-text h2 {
+    text-align: left;
+}
+
 .coupon-text p {
     max-width: 460px;
+    text-align: left;
 }
 
 .entry-door p {
@@ -1681,6 +1800,10 @@ video {
     .overview-intern p {
         font-size: 1.9em;
         max-width: 900px;
+    }
+
+    .title-waq h1 {
+        line-height: normal;
     }
 }
 
@@ -1825,6 +1948,10 @@ video {
         line-height: normal;
         margin-top: 0;
         margin-bottom: 0;
+    }
+
+    .fob {
+        line-height: normal;
     }
 }
 
@@ -2185,9 +2312,19 @@ code {
 
 /* GALLERY */
 
+.gallery-h1 {
+    font-family: var(--title-font);
+    color: var(--title-color);
+    font-size: var(--title-font-size);
+    text-align: center;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 0;
+}
+
 .wrapper {
     width: 60%;
-    margin: 40px auto;
+    margin: 60px auto;
 }
 
 .gallery-img {
