@@ -1,9 +1,9 @@
-$('.toggle-menu').click (function(){
+$('.toggle-menu').click(function () {
     $(this).toggleClass('active');
     $('#menu').toggleClass('open');
-  });
+});
 
-  document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
 
     // REVEAL ON SCROLL
     var revealerpoint = 100;
@@ -31,3 +31,6 @@ $('.toggle-menu').click (function(){
     };
 
 });
+
+
+
