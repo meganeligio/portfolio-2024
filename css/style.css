@@ -738,7 +738,6 @@ hr {
 }
 
 @media (min-width: 768px) {
-
     .photos .drag {
         display: flex;
         align-items: center;
