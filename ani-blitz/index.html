@@ -18,6 +18,8 @@
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.css">
+
     <link rel="stylesheet" href="../css/style.css">
 
 </head>
@@ -211,8 +213,6 @@
 
                 <h1 class="ab-purple">ideation</h1>
 
-                <h2 class="sitemap-flowchart">flowchart</h2>
-
                 <div class="row">
 
                     <div class="one column">
@@ -234,7 +234,7 @@
 
                     <div class="row">
 
-                        <div class="one column">
+                        <div class="one-half column">
 
                             <img class="shadows-img border-img" src="ideation/styletile.png" width="2840" height="1680"
                                 alt="style tile of ani blitz" />
@@ -353,7 +353,7 @@
 
                         <div class="row">
 
-                            <div class="one-half column">
+                            <div class="one-fourth column">
 
                                 <video autoplay loop muted playsinline class="border-img">
 
@@ -365,7 +365,7 @@
 
                             </div>
 
-                            <div class="one-half column">
+                            <div class="one-fourth column">
 
                                 <video autoplay loop muted playsinline class="border-img">
 
@@ -377,11 +377,7 @@
 
                             </div>
 
-                        </div>
-
-                        <div class="row">
-
-                            <div class="one-half column">
+                            <div class="one-fourth column">
 
                                 <video autoplay loop muted playsinline class="border-img">
 
@@ -393,7 +389,7 @@
 
                             </div>
 
-                            <div class="one-half column">
+                            <div class="one-fourth column">
 
                                 <video autoplay loop muted playsinline class="border-img">
 
@@ -409,7 +405,19 @@
 
                         <div class="row">
 
-                            <div class="one-half column">
+                            <div class="one-fourth column">
+
+                                <video autoplay loop muted playsinline class="border-img">
+
+                                    <source src="mp4/bgm.mp4" type="video/mp4">
+
+                                </video>
+
+                                <h4>bgm</h4>
+
+                            </div>
+
+                            <div class="one-fourth column">
 
                                 <video autoplay loop muted playsinline class="border-img">
 
@@ -421,7 +429,7 @@
 
                             </div>
 
-                            <div class="one-half column">
+                            <div class="one-fourth column">
 
                                 <video autoplay loop muted playsinline class="border-img">
 
@@ -433,11 +441,7 @@
 
                             </div>
 
-                        </div>
-
-                        <div class="row">
-
-                            <div class="one column">
+                            <div class="one-fourth column">
 
                                 <video autoplay loop muted playsinline class="border-img">
 
@@ -483,12 +487,12 @@
 
                     </div>
 
-                    <div class="download-pg">
+                    <!-- <div class="download-pg">
 
                         <a href="https://xd.adobe.com/view/3bb3a8db-b8de-4ac6-a898-c4a5dadaf212-6ee0/"
                             class="ab-button">download now</a>
 
-                    </div>
+                    </div> -->
 
                 </div>
 
@@ -517,7 +521,7 @@
 
             <div class="container">
 
-                <!-- <div class="ab-customs">
+                <div class="ab-customs">
 
                     <h1 class="customs-app ab-purple">custom illustrations</h1>
 
@@ -765,9 +769,13 @@
 
                     </div>
 
-                </div> -->
+                </div>
 
-                <section class="fourth-section even-columns">
+            </div>
+
+        </section>
+
+        <!-- <section class="fourth-section">
 
                     <div class="first-reveal-box">
 
@@ -775,31 +783,41 @@
 
                             <div class="reveal-box__inner">
 
-                                <img class="reveal-box__image" src="../ani-blitz/custom/characters/gojo.png" width="400" height="400" alt="img1">
-                                
-                            </div>
-        
-                            <div>
-
-                                <img class="foto" src="../ani-blitz/custom/characters/himiko.png" width="400" height="400" alt="img2">
+                                <img class="reveal-box__image" src="../ani-blitz/custom/characters/gojo.png" width="400"
+                                    height="400" alt="img1">
 
                             </div>
 
-                        </div>
-        
+                            <div class="reveal-box__inner">
+
+                                <img class="reveal-box__image" src="../ani-blitz/custom/characters/himiko.png" width="400"
+                                    height="400" alt="img2">
+
+                            </div>
+
+                            <div class="reveal-box__inner">
+
+                                <img  class="reveal-box__image" src="custom/characters/hinata.png" alt="hinata shoyo from haikyuu!!" width="500"
+                                height="500" />
+
+                            </div> -->
+
+        <!-- <div>
+
+                                <img class="foto" src="../ani-blitz/custom/characters/himiko.png" width="400"
+                                    height="400" alt="img2">
+
+                            </div> -->
+
+        <!-- </div>
+
                         <div class="click-me-container"><img src="../img/click-me.svg">
 
                         </div>
 
                     </div>
 
-                </section>
-
-            </div>
-
-            </div>
-
-        </section>
+                </section> -->
 
         <section class="revealer">
 
@@ -895,7 +913,56 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.js"></script>
+
     <script src="../js/script.js"></script>
+
+    <script>
+        $('.slider-nav a').click(function (event) {
+            event.preventDefault();
+            // or use return false;
+        });
+        var names = [];
+        $(".swiper-wrapper .swiper-slide").each(function (i) {
+            names.push($(this).data("name"));
+        });
+        var slider = new Swiper('.swiper-container', {
+
+            direction: 'horizontal',
+            mousewheelControl: true,
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+            freeMode: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            grabCursor: true,
+            loopedSlides: 22,
+            autoplayStopOnLast: false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + ' ' + 'Slide' + (index + 1) + '">' + (names[index]) + '</span>';
+                },
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                760: {
+                    spaceBetween: 0
+                }
+            }
+
+
+        });
+    </script>
 
 </body>
 

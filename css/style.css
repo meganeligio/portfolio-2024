@@ -23,8 +23,27 @@ font-family: 'Poppins', sans-serif; */
     --left-pixel: url('../img/heart.png');
     --right-pixel: url('../img/bookmark.png');
 
-    /* ANIMATION  */
+    --white: #ffffff;
+    --black: #000000;
 
+    --lightgrey-fafafa: #FAFAFA;
+    --lightgrey-e9ebec: #E9EBEC;
+    --lightgrey-dee2e4: #DEE2E4;
+    --lightgrey-c2c6ca: #C2C6CA;
+    --grey: #9B9FA5;
+    --darkgrey-c2c6ca: #878B92;
+    --darkgrey-5e5636a: #5E636A;
+    --darkgrey-3d444e: #3D444E;
+    --darkgrey-222222: #222222;
+
+    --blackfocus: rgba(34, 34, 34, 0.6);
+
+    --purple: #C9A7E8;
+    --green: #9BE8B7;
+    --lightpink: #E8C0BE;
+    --pink: #E9B4E2;
+
+    /* ANIMATION  */
     --easeInOutQuart: cubic-bezier(0.76, 0, 0.24, 1);
     --easeOutQuad: cubic-bezier(0.5, 1, 0.89, 1);
 }
