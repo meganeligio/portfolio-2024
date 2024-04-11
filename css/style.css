@@ -2806,7 +2806,7 @@ div.gallery ul li img:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--lightgrey-e9ebec);
+    background-color: var(--title-border);
 }
 
 /* Animatieklassen */
