@@ -825,24 +825,25 @@ span:nth-of-type(6) {
 .desk-instructions {
     display: flex;
     justify-content: center;
-    position: relative;
-    top: 45px;
 }
 
-.desk-instructions .arrow {
+/* .desk-instructions .arrow {
     width: 80px;
     height: 40px;
     background-image: url(../img/arrow.svg);
     background-size: contain;
     rotate: 110deg;
     translate: -20px 50px;
-}
+} */
 
-.coachmarks-container .grabber {
-    width: 50px;
-    height: 50px;
-    border: 2px solid red;
+.desk-instructions .grabber {
+    width: 40px;
+    height: 40px;
+    /* border: 2px solid red; */
     color: rgb(255 255 255);
+    position: relative;
+    top: 100px;
+    left: -90px;
 
     animation-name: grabbermove;
     animation-duration: 3s;
@@ -863,10 +864,11 @@ span:nth-of-type(6) {
     }
 }
 
-
 .desk-instructions h3 {
     font-family: var(--title-font);
     font-weight: 600;
+    position: relative;
+    top: 45px;
 }
 
 .photos {
