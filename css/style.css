@@ -22,6 +22,11 @@ font-family: 'Poppins', sans-serif; */
     --header-image: url('https://dl.dropbox.com/s/q8yecsdxvctnz1g/sakura.gif');
     --left-pixel: url('../img/heart.png');
     --right-pixel: url('../img/bookmark.png');
+
+    /* ANIMATION  */
+
+    --easeInOutQuart: cubic-bezier(0.76, 0, 0.24, 1);
+    --easeOutQuad: cubic-bezier(0.5, 1, 0.89, 1);
 }
 
 
@@ -268,7 +273,7 @@ video {
     }
 
     .ab-lr {
-        margin-top: -.6em;
+        margin-top: 1em;
         /* background-color: red; */
     }
 }
@@ -2665,5 +2670,198 @@ div.gallery ul li img:hover {
         list-style-type: none;
         margin: 0;
         padding: 0;
+    }
+}
+
+
+/* FOURTH SECTION  */
+
+.fourth-section {
+    padding-bottom: 0px;
+    position: relative;
+    padding-top: 20em;
+}
+
+.click-me-container img {
+    height: 100px;
+}
+
+.click-me-container {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    transform: translate(-60%, -110px);
+}
+
+.first-reveal-box {
+    position: relative
+}
+
+@media (min-width: 1000px) {
+    .fourth-section {
+        display: flex;
+    }
+
+    .fourth-section-right,
+    .fourth-section-left {
+        width: 50%;
+    }
+
+    .fourth-section-left {
+        height: 100vh;
+        top: 4rem;
+        left: 0;
+        position: sticky;
+    }
+
+    .click-me-container img {
+        height: 160px;
+    }
+
+    .click-me-container {
+        position: absolute;
+        top: 0;
+        left: 40%;
+        transform: translate(-60%, -170px);
+    }
+
+    .fourth-section {
+        padding-bottom: 100px;
+    }
+
+}
+
+/* Stijlen voor .reveal-box */
+.reveal-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    position: relative;
+    /* height: calc(100vh - 48px); */
+    /* max-height: 480px; */
+    /* width: calc((100vh - 48px) * 0.66); */
+    /* max-width: 320px; */
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+
+.reveal-box>div {
+    grid-area: 1 / 1 / 2 / 2;
+    border-radius: 30px;
+}
+
+.foto {
+    border-radius: 33px;
+}
+
+.reveal-box__inner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.foto,
+.reveal-box__image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hidden {
+    display: none;
+}
+
+.reveal-box__inner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--lightgrey-e9ebec);
+}
+
+/* Animatieklassen */
+.enter .reveal-box__inner {
+    animation: slide-in-right 0.9s var(--easeInOutQuart) 0s both paused;
+}
+
+.enter .reveal-box__inner::after {
+    animation: slide-out-right 0.9s var(--easeInOutQuart) 0.6s both paused;
+}
+
+.enter .reveal-box__image {
+    animation: scale-in-down 1.5s var(--easeInOutQuart) 0.3s both paused;
+}
+
+.leave .reveal-box__inner {
+    animation: slide-out-right 0.9s var(--easeInOutQuart) 0s both paused;
+}
+
+.leave .reveal-box__inner::after {
+    animation: slide-in-left 0.9s var(--easeInOutQuart) 0s both paused;
+}
+
+.leave .reveal-box__image {
+    animation: slide-out-left 0.9s var(--easeInOutQuart) 0s both paused;
+}
+
+.animate .reveal-box__inner,
+.animate .reveal-box__inner::after,
+.animate .reveal-box__image {
+    animation-play-state: running;
+}
+
+/* Keyframe-animaties */
+@keyframes slide-in-right {
+    0% {
+        transform: translate3D(-100%, 0, 0);
+    }
+
+    100% {
+        transform: translate3D(0, 0, 0);
+    }
+}
+
+@keyframes slide-out-right {
+    0% {
+        transform: translate3D(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3D(100%, 0, 0);
+    }
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translate3D(100%, 0, 0);
+    }
+
+    100% {
+        transform: translate3D(0, 0, 0);
+    }
+}
+
+@keyframes slide-out-left {
+    0% {
+        transform: translate3D(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3D(-100%, 0, 0);
+    }
+}
+
+@keyframes scale-in-down {
+    0% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }
