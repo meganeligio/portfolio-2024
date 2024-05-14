@@ -998,7 +998,7 @@ span:nth-of-type(6) {
 
 .home-body {
     height: 112vh;
-    background: url(../img/home-hero.svg);
+    background: url(../img/home-hero.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
