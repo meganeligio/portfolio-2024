@@ -19,7 +19,7 @@ font-family: 'Poppins', sans-serif; */
     --body-font: 'Poppins', sans-serif;
     --body-font-color: rgb(77 125 97);
     --box-color: rgb(255 237 239);
-    --header-image: url('https://dl.dropbox.com/s/q8yecsdxvctnz1g/sakura.gif');
+    --header-image: url(../img/about-photo.jpg);
     --left-pixel: url('../img/heart.png');
     --right-pixel: url('../img/bookmark.png');
 
@@ -831,22 +831,12 @@ span:nth-of-type(6) {
     justify-content: center;
 }
 
-/* .desk-instructions .arrow {
-    width: 80px;
-    height: 40px;
-    background-image: url(../img/arrow.svg);
-    background-size: contain;
-    rotate: 110deg;
-    translate: -20px 50px;
-} */
-
 .desk-instructions .grabber {
     width: 40px;
     height: 40px;
-    /* border: 2px solid red; */
     color: rgb(255 255 255);
     position: relative;
-    top: 100px;
+    top: 90px;
     left: -90px;
 
     animation-name: grabbermove;
@@ -872,7 +862,7 @@ span:nth-of-type(6) {
     font-family: var(--title-font);
     font-weight: 600;
     position: relative;
-    top: 45px;
+    top: 35px;
 }
 
 .photos {
@@ -932,8 +922,8 @@ span:nth-of-type(6) {
 
     .pulsating-circle {
         position: absolute;
-        left: 90px;
-        top: 500px;
+        left: 110px;
+        top: 490px;
         transform: translateX(-50%) translateY(-50%);
         width: 17px;
         height: 17px;
@@ -1000,8 +990,8 @@ span:nth-of-type(6) {
     font-family: var(--title-font);
     font-weight: 600;
     position: relative;
-    top: 430px;
-    left: 85px;
+    top: 420px;
+    left: 95px;
 }
 
 /* PROJECTS */
@@ -1106,9 +1096,9 @@ span:nth-of-type(6) {
 }
 
 .softwares p {
-    margin-bottom: 6em;
+    margin-top: 3em;
+    margin-bottom: 2em;
     text-transform: uppercase;
-    text-align: right;
     padding-right: 1em;
 }
 
@@ -1200,23 +1190,23 @@ span:nth-of-type(6) {
 .tags-idle {
     list-style: none;
     padding: 0;
-    margin-bottom: 5.8em;
-    text-align: center;
+    margin-bottom: 5em;
 }
 
 .tags-idle li {
     display: inline-block;
-    background: rgb(225 255 0);
+    background: rgb(41 43 45);
     border-radius: 2em;
     padding: .5em 2em;
     margin: .3em .2em .5em .2em;
-    color: rgb(41, 43, 45);
+    color: rgb(205 222 0);
     text-transform: uppercase;
     font-weight: 600;
 }
 
 .title-idle {
     text-align: center;
+    margin-top: 2em;
 }
 
 .title-idle h1 {
@@ -1393,8 +1383,7 @@ span:nth-of-type(6) {
 .tags-haikyuu {
     list-style: none;
     padding: 0;
-    margin-bottom: 5.8em;
-    text-align: center;
+    margin-bottom: 5em;
 }
 
 .tags-haikyuu li {
@@ -1410,6 +1399,7 @@ span:nth-of-type(6) {
 
 .title-haikyuu {
     text-align: center;
+    margin-top: 2em;
 }
 
 .title-haikyuu h1 {
@@ -1575,8 +1565,7 @@ span:nth-of-type(6) {
 .tags-stickers {
     list-style: none;
     padding: 0;
-    margin-bottom: 5.8em;
-    text-align: center;
+    margin-bottom: 5em;
 }
 
 .tags-stickers li {
@@ -1592,6 +1581,7 @@ span:nth-of-type(6) {
 
 .title-stickers {
     text-align: center;
+    margin-top: 2em;
 }
 
 .title-stickers h1 {
@@ -1732,8 +1722,7 @@ span:nth-of-type(6) {
 .tags-blitz {
     list-style: none;
     padding: 0;
-    margin-bottom: 5.8em;
-    text-align: center;
+    margin-bottom: 5em;
 }
 
 .tags-blitz li {
@@ -1749,6 +1738,7 @@ span:nth-of-type(6) {
 
 .title-blitz {
     text-align: center;
+    margin-top: 2em;
 }
 
 .title-blitz h1 {
@@ -1896,8 +1886,7 @@ span:nth-of-type(6) {
 .tags-waq {
     list-style: none;
     padding: 0;
-    margin-bottom: 5.8em;
-    text-align: center;
+    margin-bottom: 5em;
 }
 
 .tags-waq li {
@@ -1913,6 +1902,7 @@ span:nth-of-type(6) {
 
 .title-waq {
     text-align: center;
+    negative: 2em;
 }
 
 .title-waq h1 {
@@ -2077,8 +2067,7 @@ span:nth-of-type(6) {
 .tags-magazine {
     list-style: none;
     padding: 0;
-    margin-bottom: 5.8em;
-    text-align: center;
+    margin-bottom: 5em;
 }
 
 .tags-magazine li {
@@ -2094,6 +2083,7 @@ span:nth-of-type(6) {
 
 .title-magazine {
     text-align: center;
+    margin-top: 2em;
 }
 
 .title-magazine h1 {
@@ -2424,6 +2414,11 @@ code {
     float: right;
     background: var(--left-pixel) center / contain no-repeat;
     margin-bottom: 2.1em;
+}
+
+#right-pixel > p,
+#left-pixel > p {
+	text-align: center;
 }
 
 #left-modal {
@@ -2806,7 +2801,7 @@ div.gallery ul li img:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--title-border);
+    background-color: var(--lightgrey-e9ebec);
 }
 
 /* Animatieklassen */
