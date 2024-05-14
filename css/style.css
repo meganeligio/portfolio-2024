@@ -997,11 +997,6 @@ span:nth-of-type(6) {
 /* PROJECTS */
 
 .home-body {
-    height: 112vh;
-    background: url(../img/home-hero.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     position: relative;
 }
 
@@ -2203,62 +2198,6 @@ span:nth-of-type(6) {
 }
 
 
-/* @KEYFRAME ANIMATIONS */
-
-/* @keyframes fade-in-and-down {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.fade-in-and-down * {
-    animation-name: fade-in-and-down;
-    animation-duration: 0.4s;
-    animation-timing-function: ease-out;
-    animation-delay: 0;
-    animation-fill-mode: forwards;
-    opacity: 0;
-}
-
-.fade-in-and-down *:nth-child(1) {
-    animation-delay: 0.2s;
-}
-
-.fade-in-and-down *:nth-child(2) {
-    animation-delay: 0.4s;
-}
-
-.fade-in-and-down *:nth-child(3) {
-    animation-delay: 0.6s;
-}
-
-.fade-in-and-down *:nth-child(4) {
-    animation-delay: 0.8s;
-}
-
-.fade-in-and-down *:nth-child(5) {
-    animation-delay: 1s;
-}
-
-.fade-in-and-down *:nth-child(6) {
-    animation-delay: 1.2s;
-}
-
-.fade-in-and-down *:nth-child(7) {
-    animation-delay: 1.4s;
-}
-
-.fade-in-and-down *:nth-child(8) {
-    animation-delay: 1.6s;
-} */
-
-
 /* SCROLL-TRIGGERED ANIMATIONS ("REVEALER") */
 
 .revealer * {
@@ -2884,4 +2823,30 @@ div.gallery ul li img:hover {
     100% {
         transform: scale(1);
     }
+}
+
+
+/* HOME HERO IMG */
+
+.home-body header {
+    position: absolute;
+    width: 100%;
+}
+
+.home-body main {
+    position: relative;
+    padding-top: 100px;
+}
+
+.wallpaper {
+    background: url(../img/home-hero.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
